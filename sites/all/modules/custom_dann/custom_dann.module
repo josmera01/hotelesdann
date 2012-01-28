@@ -1,0 +1,600 @@
+<?php
+/*
+ * Impletacion hook_block_view
+ */
+function custom_dann_block_view($delta = ''){
+switch ($delta) {
+
+    case 'header-internas':
+      $block['subject'] = t('Bloque header internas');
+      $block['content'] = _get_header_interna();
+      break;
+  case 'view-360':
+      $block['subject'] = t('Bloque view 360');
+      $block['content'] = _get_views_360();
+      break;
+
+  case 'booking':
+      $block['subject'] = t('Bloque booking');
+      $block['content'] = _get_booking();
+      break;
+  case 'mapa-view':
+      $block['subject'] = t('Bloque view mapa');
+      $block['content'] = l(t('View map'), 'explore/'.arg(1));
+      break;
+  case 'rooms-view':
+      $block['subject'] = t('Bloque rooms');
+      $block['content'] = _get_views_rooms();
+      break;
+  case 'booking-home':
+      $block['subject'] = t('Bloque booking home');
+      $block['content'] = _get_booking_home();
+      break;
+  case 'boton-booking':
+      $block['subject'] = t('Bloque boton booking');
+      $block['content'] = _boton_booking_hotel();
+      break;    
+
+
+  }
+  return $block;
+}
+/*
+ * Impletacion hook_block_info
+ */
+function custom_dann_block_info() {
+ $blocks['header-internas'] = array(
+    'info' => t('Bloque header internas'),
+
+  );
+ $blocks['view-360'] = array(
+    'info' => t('Bloque view 360'),
+  );
+ $blocks['booking'] = array(
+    'info' => t('Bloque booking'),
+  );
+ $blocks['mapa-view'] = array(
+    'info' => t('Bloque view mapa'),
+  );
+ $blocks['rooms-view'] = array(
+    'info' => t('Bloque rooms'),
+  );
+  $blocks['booking-home'] = array(
+    'info' => t('Bloque booking home'),
+  );
+   $blocks['boton-booking'] = array(
+    'info' => t('Bloque boton booking'),
+  );
+
+  return $blocks;
+}
+
+
+
+/**
+* Implements hook_entity_info_alter().
+*/
+
+function custom_dann_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['custon dann'] = array(
+    'label' => t('Custom dann'),
+    'custom settings' => TRUE,
+  );
+
+  $entity_info['node']['view modes']['custon-menu'] = array(
+    'label' => t('Custom menu'),
+    'custom settings' => TRUE,
+  );
+}
+
+
+function _get_header_interna(){
+    
+    $nid  = arg(1);
+    if(is_numeric($nid)){
+        $entity = entity_load('node', array($nid) );
+        
+        if(!empty ($entity[$nid]->field_node_partner_hotel)){
+           $nid_hotel = $entity[$nid]->field_node_partner_hotel['und'][0]['nid'];
+        
+           $node = node_load($nid_hotel);
+            $html[] = node_view($node, 'custom_view');
+            $html[] = node_view($node, 'custon-menu');
+            return drupal_render($html) ;
+        }
+      
+
+        
+    }else{
+       global $language;
+
+        $url = arg(1);
+
+        $url = str_replace("-", " ", $url);
+       $result = db_select('node', 'n')
+                ->fields('n')
+                 ->condition('title', $url,'=')
+                  ->condition('language', $language->language)
+                 ->execute();
+         foreach($result AS $value){
+                $nid = $value->nid;
+            }
+            if(is_numeric($nid)){
+                $node = node_load($nid);
+               
+              $html[] = node_view($node, 'custom_view');
+              $html[] = node_view($node, 'custon-menu');
+            return drupal_render($html) ;
+            }
+         
+
+    }
+
+}
+
+
+
+function _get_views_360(){
+    $nid  = arg(1);
+    if(is_numeric($nid)){
+        $entity = entity_load('node', array($nid) );
+        if(!empty ($entity[$nid]->field_node_partner_hotel)){
+           $nid_hotel = $entity[$nid]->field_node_partner_hotel['und'][0]['nid'];
+           $result = db_select('field_data_field_node_partner_hotel', 'n')
+                ->fields('n')
+                 ->condition('field_node_partner_hotel_nid', $nid_hotel,'=')
+                 ->condition('bundle ', '360_photograph','=')
+                 ->condition('entity_id', $nid,'!=')
+                 ->execute();
+           
+            foreach($result AS $value){
+                $nids[] = $value->entity_id;
+                
+            }
+          
+           $node = node_load_multiple($nids);
+           $output .= '<h2>'.t('Continue the virtual tour with the following locations').'</h2>'; 
+           $output .= drupal_render(node_view_multiple($node, 'custon dann'));
+           
+        }
+
+    }
+    return $output;
+}
+
+function _get_views_rooms(){
+    $nid  = arg(1);
+    if(is_numeric($nid)){
+        $entity = entity_load('node', array($nid) );
+        if(!empty ($entity[$nid]->field_node_partner_hotel)){
+           $nid_hotel = $entity[$nid]->field_node_partner_hotel['und'][0]['nid'];
+           $result = db_select('field_data_field_node_partner_hotel', 'n')
+                ->fields('n')
+                 ->condition('field_node_partner_hotel_nid', $nid_hotel,'=')
+                 ->condition('bundle ', 'rooms','=')
+                 ->condition('entity_id', $nid,'!=')
+                 ->execute();
+
+            foreach($result AS $value){
+                $nids[] = $value->entity_id;
+
+            }
+
+           $node = node_load_multiple($nids);
+           $output .= '<h2>'.t('Other Rooms').'</h2>';
+           $output .= render(node_view_multiple($node, 'custon dann'));
+
+        }
+
+    }
+    return $output;
+}
+
+
+function _get_booking(){
+    $nid  = arg(1);
+    if(is_numeric($nid)){
+        $node = entity_load('node', array($nid) );
+       
+        if( !empty ($node[$nid]->field_booking['und'][0]['value'])){
+            return _get_booking_code($node[$nid]->field_booking['und'][0]['value']);
+        }  
+    }else{
+
+       $url = arg(1);
+       $url = str_replace("-", " ", $url);
+       $result = db_select('node', 'n')
+                ->fields('n')
+                 ->condition('title', $url,'=')
+                 ->execute();
+         foreach($result AS $value){
+                $nid = $value->nid;
+            }
+            if(is_numeric($nid)){
+             $node = entity_load('node', array($nid) );
+             return _get_booking_code($node[$nid]->field_booking['und'][0]['value']);
+
+            }
+
+
+    }
+ 
+}
+
+function _get_booking_code($id){
+    
+    $output .='<form method="get" action="https://gc.synxis.com/rez.aspx" id="booking-form">';
+  $output  .='<fieldset>';
+  $output .='<legend class="accesibility">Reservar una habitación</legend>';
+
+      $output .= '<input type="hidden" value="13317" name="chain"> ';
+      $output  .= '<input type="hidden" value="'.$id.'" name="hotel"> <!-- ID de Hotel Casa Dann, cambiar según el nodo -->';
+      $output .= '<input type="hidden" value="es-ES" name="locale"> <!-- Variable de idioma, cambia según idioma del sitio Ej: Inglés en-US Portugués pt-PT-->';
+      $output .= '<input type="hidden" value="availresults" name="start"> <!-- Variable para indicar al Booking Engine que no muestre la selección de fechas de nuevo (No Modificar) -->';
+
+      $output .='<div class="wrapper calendar">';
+        $output .='<label for="datepicker">'.t('Arrival Date').'</label>';
+       $output .='<input type="text" class="text-input calendar required" name="arrive" id="datepicker" size="10" />';
+      $output .='</div>';
+
+
+      $output .='      <div class="wrapper nights">
+        <label for="nights">'.t('Nights').'</label>
+      
+      <select  class="text-input" name="nights" id="nights" >
+         <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+
+    </select>
+
+      </div>';
+
+      $output .='  <div class="wrapper">
+        <label for="rooms"><abbr title="Número de habitaciones">'.t('Rooms').'</abbr></label>
+       <select class="" id="rooms" name="rooms">
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      </div>
+      
+      <div class="wrapper">
+        <label for="adult">'.t('Adults').'</label>
+       <select class="text-input" name="adult" id="adult" >
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+    </select>
+
+      </div>
+      
+      <div class="wrapper childs">
+        <label for="child">'.t('Children').'</label>
+       
+        <select class="text-input" name="child" id="child">
+
+        <option value="0" selected="selected">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+
+        <option value="18">18</option>
+    </select>
+
+      </div>
+      
+      <input type="submit" class="submit" value="'.t('Book Now!').'" />';
+    $output .='</fieldset>';
+      $output .='</form>';
+        $output .= '
+
+<div style="display: none;" class="demo-description">
+
+</div>';
+  /*  drupal_add_js('jQuery(document).ready(function () { 
+    jQuery("#datepicker").click(function() {
+       jQuery("#datepicker").datepicker({
+            numberOfMonths: 2,
+            showButtonPanel: false
+        });
+        alert("hola");
+    });
+     });', 'inline'); */
+     return $output;
+    
+}
+
+function node_get_title($nid){
+     $result = db_select('node', 'n')
+                ->fields('n')
+                 ->condition('nid', $nid,'=')
+                 ->execute();
+ foreach ($result AS $value){
+     $title = $value->title;
+ }
+ return strtolower($title);
+
+}
+
+
+function _get_booking_home(){
+    $output ='    <form id="booking-form" action="https://gc.synxis.com/rez.aspx" method="get">
+    <fieldset>
+      <legend class="accesibility">'.t('Reservar una habitación').'</legend>
+      
+      <input type="hidden" name="chain" value="13317" /> 
+      
+      <input type="hidden" name="locale" value="es-ES" /> 
+      <input type="hidden" name="start" value="availresults" />
+      <select name="hotel" class="required">
+       <option value="null">'.t('Select a hotel...').'</option>
+      <optgroup label="Bogotá">
+         
+            <option value="55382">Hotel Dann Avenida 19 </option>
+            <option value="55386">Hotel Dann Norte Bogotá</option>
+            <option value="55387">Hotel Dann Carlton Bogotá</option>
+            <option value="53937">Casa Dann Carlton, Hotel & Spa</option>
+                          
+      </optgroup>                      
+                        
+       <optgroup label="Bucaramanga">
+        <option value="55383">Hotel Dann Carlton Bucaramanga</option>
+       </optgroup>
+       <optgroup label="Cartagena">
+         <option value="55392">Hotel Dann Cartagena</option>
+       </optgroup>
+       <optgroup label="Ibagué">
+        <option value="55384">Hotel Dann Combeima Ibagué</option>
+       </optgroup>
+       <optgroup label="Popayán">
+        <option value="55385">Hotel Dann Monasterio Popayán</option>
+       </optgroup>
+       <optgroup label="Quito">
+         <option value="55388">Hotel Dann Carlton Quito</option>
+       </optgroup>
+</select>
+      <div class="wrapper calendar">
+        <label for="datepicker">'.t('Arrival Date').'</label>
+        <input type="text" class="text-input calendar required" name="arrive" id="datepicker" size="10" />
+      </div>
+      
+      <div class="wrapper nights">
+        <label for="nights">'.t('Nights').'</label>
+      
+      <select  class="text-input" name="nights" id="nights" >
+         <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+
+    </select>
+
+      </div>
+      
+      <div class="wrapper">
+        <label for="rooms"><abbr title="Número de habitaciones">'.t('Rooms').'</abbr></label>
+       <select class="" id="rooms" name="rooms">
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      </div>
+      
+      <div class="wrapper">
+        <label for="adult">'.t('Adults').'</label>
+       <select class="text-input" name="adult" id="adult" >
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+    </select>
+
+      </div>
+      
+      <div class="wrapper childs">
+        <label for="child">'.t('Children').'</label>
+       
+        <select class="text-input" name="child" id="child">
+
+        <option value="0" selected="selected">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+
+        <option value="18">18</option>
+    </select>
+
+      </div>
+      
+      <input type="submit" class="submit" value="'.t('Book Now!').'" />
+    </fieldset>
+      </form> 
+
+     <div id="telefonosRedes"><p class="telefono">'.t('Reserve Toll Free')  .'<span>01 8000 94 3266 (DANN)</span></p>
+<ul>
+<li><a title="Síguenos en Facebook" href="http://www.facebook.com/hotelesdann"><img width="30" height="30" alt="Síguenos en Facebook" src="/sites/all/themes/dann/images/generales/icono-facebook.png"></a></li>
+<li><a title="Síguenos en Flickr" href="http://www.flickr.com/hotelesdann/"><img width="30" height="30" alt="Síguenos en Flickr" src="/sites/all/themes/dann/images/generales/icono-flickr.png"></a></li>
+<li><a title="Síguenos en Twitter" href="https://twitter.com/#!/hotelesdann"><img width="30" height="30" alt="Síguenos en Twitter" src="/sites/all/themes/dann/images/generales/icono-twitter.png"></a></li>
+</ul>
+</div> 
+
+      ';
+
+    return $output;
+}
+
+function _add_padre_taxonomia(){
+     $nid  = arg(1);
+
+    if(is_numeric($nid)){
+        $entity = entity_load('node', array($nid) );
+        $city =  _padre_taxonomi_tid($entity[$nid]->field_city['und'][0]['tid']);
+
+       return  t(" , @name", array('@name' => $city));
+       
+    }else{
+       
+        $url = arg(1);
+        $url = str_replace("-", " ", $url);
+       $result = db_select('node', 'n')
+                ->fields('n')
+                 ->condition('title', $url,'=')
+                 ->execute();
+         foreach($result AS $value){
+                $nid = $value->nid;
+            }
+           
+            if(is_numeric($nid)){
+                $entity = entity_load('node', array($nid) );
+                $city =  _padre_taxonomi_tid($entity[$nid]->field_city['und'][0]['tid']);
+                return  t(" , @name", array('@name' => $city));
+        
+            }
+         
+
+    }
+}
+
+function _padre_taxonomi_tid($tid){
+
+  $object = taxonomy_get_parents($tid);
+  foreach($object AS $index=>$value){
+    $output = $value->name;
+  }
+  return $output;
+}
+
+
+function _boton_booking_hotel(){
+  $nid = arg(1);
+  $node = entity_load('node', array($nid));
+  $id = $node[$nid]->field_booking['und'][0]['value'];
+  return l(t('See availability'), 'https://gc.synxis.com/rez.aspx?chain=13317&hotel='.$id);
+}

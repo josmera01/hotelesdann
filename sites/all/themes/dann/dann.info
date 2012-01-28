@@ -1,0 +1,116 @@
+name = 'dann'
+description = ''
+core = '7.x'
+engine = 'phptemplate'
+screenshot = 'screenshot.png'
+base theme = 'omega'
+; Do NOT remove the following commented lines. They will be used for
+; automated generation of the .info settings when rewritten.
+
+; CONTENT REGIONS
+regions[page_top] = 'Page Top'
+regions[page_bottom] = 'Page Bottom'
+regions[content] = 'Content'
+regions[user_first] = 'User Bar First'
+regions[user_second] = 'User Bar Second'
+regions[branding] = 'Branding'
+regions[menu] = 'Menu'
+regions[sidebar_first] = 'Sidebar First'
+regions[sidebar_second] = 'Sidebar Second'
+regions[header_first] = 'Header First'
+regions[header_second] = 'Header Second'
+regions[preface_first] = 'Preface First'
+regions[preface_second] = 'Preface Second'
+regions[preface_third] = 'Preface Third'
+regions[postscript_first] = 'Postscript First'
+regions[postscript_second] = 'Postscript Second'
+regions[postscript_third] = 'Postscript Third'
+regions[postscript_fourth] = 'Postscript Fourth'
+regions[postcontent_left] = 'Postcontent Left'
+regions[postcontent_right] = 'Postcontent Right'
+regions[footer_first] = 'Footer First'
+regions[footer_second] = 'Footer Second'
+
+; CSS
+css[global.css][name] = Global Styles
+css[global.css][description] = Default global styles for Dann theme
+css[global.css][options][weight] = -10
+settings[dann][global.css] = 'global.css'
+
+css[styles.css][name] = Main Styles
+css[styles.css][description] = Your main custom CSS file for Dann theme
+css[styles.css][options][weight] = -9
+settings[dann][styles.css] = 'styles.css'
+
+;CSS calender
+css[jquery.ui.core.css][name] = Core CSS
+css[jquery.ui.core.css][description] = Your main custom CSS file for Dann theme
+css[jquery.ui.core.css][options][weight] = -8
+settings[dann][jquery.ui.core.css] = 'jquery.ui.core.css'
+
+
+css[jquery.ui.datepicker.css][name] = Datapicker CSS
+css[jquery.ui.datepicker.css][description] = Your main custom CSS file for Dann theme
+css[jquery.ui.datepicker.css][options][weight] = -8
+settings[dann][jquery.ui.datepicker.css] = 'jquery.ui.datepicker.css'
+
+css[jquery.ui.theme.css][name] = Theme CSS
+css[jquery.ui.theme.css][description] = Your main custom CSS file for Dann theme
+css[jquery.ui.theme.css][options][weight] = -8
+settings[dann][jquery.ui.theme.css] = 'jquery.ui.theme.css'
+
+css[jquery.ui.tabs.css][name] = Theme CSS
+css[jquery.ui.tabs.css][description] = Your main custom CSS file for Dann theme
+css[jquery.ui.tabs.css][options][weight] = -8
+settings[dann][jquery.ui.tabs.css] = 'jquery.ui.tabs.css'
+
+css[css-custom.css][name] = Custom CSS
+css[css-custom.css][description] = Your main custom CSS file for Dann theme
+css[css-custom.css][options][weight] = -8
+settings[dann][css-custom.css] = 'css-custom.css'
+
+
+;JS
+
+libraries[dann_validate][name] = validate
+libraries[dann_validate][description] = validate 
+libraries[dann_validate][js][0][file] = jquery.validate.js
+libraries[dann_validate][js][0][options][weight] = 0
+settings[dann][dann_validate] = 'dann_validate'
+
+libraries[dann_innerfade][name] = innerfade
+libraries[dann_innerfade][description] = innerfade para slider en las paginas internas
+libraries[dann_innerfade][js][0][file] = jquery.innerfade.js
+libraries[dann_innerfade][js][0][options][weight] = 0
+settings[dann][dann_innerfade] = 'dann_innerfade'
+
+
+libraries[dann_functions][name] = functions
+libraries[dann_functions][description] = Function javascipt del portal
+libraries[dann_functions][js][0][file] = functions.js
+libraries[dann_functions][js][0][options][weight] = 1
+settings[dann][dann_functions] = 'dann_functions'
+
+;Calender JS
+libraries[dann_core][name] = jquery core
+libraries[dann_core][description] = JS core jquery UI
+libraries[dann_core][js][0][file] = jquery-ui-1.8.7.custom.min.js
+libraries[dann_core][js][0][options][weight] = 2
+settings[dann][dann_core] = 'dann_core'
+
+
+; REQUIRED CORE REGIONS
+regions[page_top] = 'Page Top'
+
+zones[content] = content
+zones[footer] = Footer
+
+zones[header_top] = Header top
+zones[header_bottom] = Header bottom
+
+
+zones[pre_content_top] = Pre content top
+zones[pre_content_bottom] = Pre content bottom
+zones[content_top] = Content top
+zones[content_center] = Content center
+zones[content_bottom] = Content bottom

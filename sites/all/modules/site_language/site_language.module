@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Para evitar inconvenientes con los textos sin idioma determinado en el sitio al momento de cambiar el lenguaje predeterminado, se deja el idioma por defecto siempre en Ingles, y se le da la instrucción al sitio de ingresar a español sin modificar esta configuración.
+ * Este módulo define un criterio de detección de lenguaje, que se debe ubicar de penúltimo en la lista dejando como últmo el criterio "Default".
+ */
+
+
+/**
+ * Implements hook_language_negotiation_info().
+ */
+function site_language_language_negotiation_info() {
+  return array(
+    'site_language' => array(
+      'callbacks' => array(
+        'language' => 'site_language_provider_callback'
+      ),
+      'description' => t("Determine the language from the browser's language settings."),
+      'file' => drupal_get_path('module', 'site_language') . '/site_language.module',
+      'name' => t('Custom Configuration Language'),
+      'description' => t('Sets the language to spanish.'),
+      'cache' => 0,
+    ),
+  );
+}
+
+function site_language_provider_callback($languages) {
+  return 'es';
+}

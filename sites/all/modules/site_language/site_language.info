@@ -1,0 +1,4 @@
+name = Custom Site Language
+description = Sets the default language to Spanish
+core = 7.x
+package = Language

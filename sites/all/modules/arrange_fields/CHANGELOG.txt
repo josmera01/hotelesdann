@@ -1,0 +1,67 @@
+; $Id$ 
+===================
+Changelog for Arrange Fields
+For Drupal 7.x
+===================
+
+9-25-2011
+ Thanks to user drizzi (http://drupal.org/user/226909) for letting me debug on his server, I discovered the
+ solution to an anoying bug affecting several Webforms users.  When you set
+ the label to be "inline" in webforms, a strange interaction with CSS and jQuery UI
+ caused textfields to resize strangely.  From now on, use Arrange Fields to set the
+ label as inline or not.
+ 
+ Also, fixed an issue where sometimes form elements wind up "stacked" on top of each other
+ when arranging fields for the first time.
+ 
+ Also fixed a bug where setting radio buttons/checkboxes to inline, then back to block
+ caused a problem.
+
+9-24-2011
+ Found a bug which was causing certain webform components to not be
+ configurable (they didn't get the configure link on the hover handle),
+ and they were not being recognized as webform components.
+
+9-22-2011
+ Added the ability to specify module include files along with form_id's, 
+ on the Arrange Fields settings page.
+
+6-30-2011
+ Added support for the Mollom module, when using Webforms (it was not
+ arrangable until now)
+
+5-26-2011
+ Added a new "Enable form_id discovery mode" checkbox to the settings
+ page to make it easier to find out form id's on the page.  If checked,
+ administrators will see a printout at the top of every page with a list
+ of what forms are on that page. You can then enter those form_id's into
+ the settings page to arrange them.
+
+4-17-2011
+ Somehow the png graphic for the grid got corrupted, so
+ I am replacing it.
+
+3-19-2011
+ Made minor change to prevent a notice from showing up when
+ arranging a content type (the notice was coming from core's
+ node.pages.inc, line 303).
+
+3-16-2011
+ Made a minor change when looking at elements in the form array
+ to prevent PHP notice messages from appearing.
+
+1-26-2011
+ Made a slight change to init a variable before using it. This
+ was causing a PHP Notice to appear in certain situations.
+
+01-14-2011
+  Tweaking some display issues, and doing my best to get rid
+  of PHP notices being generated from this module.  Also, corrected
+  some instruction text to be correct for D7, instead of D6.
+
+01-13-2011
+  Putting out the first (alpha) release for Drupal 7
+
+01-07-2011
+  Working from the 6x-1.4 version of Arrange Fields to try and create
+  a port for D7. 

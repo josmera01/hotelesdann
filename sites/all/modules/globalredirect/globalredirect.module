@@ -1,0 +1,175 @@
+<?php
+// $Id: globalredirect.module,v 1.13.2.1 2010/07/16 22:59:32 njt1982 Exp $
+
+/**
+ * @file
+ * The Global Redirect module redirects for all paths which have aliases but
+ * are not using the aliases which reduces the risk of duplicate content.
+ */
+
+
+/**
+ * Implements hook_help().
+ */
+function globalredirect_help($section) {
+  switch ($section) {
+    case 'admin/modules#description':
+      return t('This module will do a 301 redirect for all nodes which have an alias but are not using that alias.');
+  }
+}
+
+
+/**
+ * Implements hook_init().
+ */
+function globalredirect_init() {
+
+ 
+ 
+
+}
+
+
+/**
+ * Implements hook_menu().
+ */
+function globalredirect_menu() {
+  $items['admin/config/system/globalredirect'] = array(
+    'title' => 'Global Redirect',
+    'description' => 'Chose which features you would like enabled for Global Redirect',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('globalredirect_settings'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'globalredirect.admin.inc',
+  );
+
+  return $items;
+}
+
+
+/**
+ * Drupal 6 backport of drupal_is_cli().
+ */
+function globalredirect_is_cli() {
+  return (!isset($_SERVER['SERVER_SOFTWARE']) && (PHP_SAPI == 'cli' || (is_numeric($_SERVER['argc']) && $_SERVER['argc'] > 0)));
+}
+
+
+/**
+ * Internal function to determine if GlobalRedirect is active.
+ * Several rules have to be checked prior to execution, such as an empty post array,
+ * the site must be online and we cannot be running in CLI mode (eg Drush).
+ */
+function _globalredirect_is_active($settings) {
+  /**
+   * We need to do a test to make sure we only clean up URL's for the main
+   * request. This stops modules such as the Ad Module which had its own script
+   * in its folder doing a bootstrap which invoked hook_init() and caused some
+   * banners to get "cleaned up"
+   *
+   * @see http://drupal.org/node/205810
+   * @see http://drupal.org/node/278615
+   */
+  if ($_SERVER['SCRIPT_NAME'] != $GLOBALS['base_path'] . 'index.php') return FALSE;
+
+
+  /**
+   * If this is a command line request (Drush, etc), skip processing.
+   */
+  if (globalredirect_is_cli()) {
+    return FALSE;
+  }
+
+
+  /**
+   * Check if the request is an attempted url mask
+   */
+  if (strpos(request_uri(), '://') !== FALSE) {
+    return FALSE;
+  }
+
+
+  /**
+   * If the site is in offline mode there is little point doing any of this as
+   * you might end up redirecting to a 503.
+   */
+  if (variable_get('site_offline', 0) == 1) return FALSE;
+
+
+  /**
+   * If there is something posted, GlobalRedirect is not active
+   */
+  if (!empty($_POST)) return FALSE;
+
+
+  /**
+   * If drupal_get_path_alias isn't preset, GlobalRedirect is not active
+   */
+  if (!function_exists('drupal_get_path_alias')) return FALSE;
+
+
+  /**
+   * If menu_check is enabled AND the menu_get_item function is missing, GlobalRedirect is disabled
+   */
+  if ($settings['menu_check'] && !function_exists('menu_get_item')) return FALSE;
+
+
+  /**
+   * We seem to have passed all the tests - let say we're active
+   */
+  return TRUE;
+}
+
+
+/**
+ * Return the settings with any defaults mapped over the top
+ */
+function _globalredirect_get_settings($default_only = FALSE) {
+  $defaults = array(
+    'deslash' => 1,
+    'nonclean_to_clean' => 1,
+    'trailing_zero' => 0,
+    'menu_check' => 0,
+    'case_sensitive_urls' => 1,
+    'language_redirect' => 0,
+    'canonical' => 0,
+    'content_location_header' => 0,
+    'term_path_handler' => 1,
+  );
+
+  if ($default_only) {
+    return $defaults;
+  }
+
+  return variable_get('globalredirect_settings', array()) + $defaults;
+}
+
+
+/**
+ * globalredirect_request_path() is borrowed from request_uri(), but it only ltrim's..
+ */
+function globalredirect_request_path() {
+  if (isset($_SERVER['REQUEST_URI'])) {
+    if (isset($_REQUEST['q'])) {
+      $path = $_REQUEST['q'];
+    }
+    else {
+      // This is a request using a clean URL. Extract the path from REQUEST_URI.
+      $request_path = strtok($_SERVER['REQUEST_URI'], '?');
+      $base_path_len = strlen(rtrim(dirname($_SERVER['SCRIPT_NAME']), '\/'));
+      // Unescape and strip $base_path prefix, leaving q without a leading slash.
+      $path = substr(urldecode($request_path), $base_path_len + 1);
+    }
+  }
+  else {
+    // This is the front page.
+    $path = '';
+  }
+
+  // Under certain conditions Apache's RewriteRule directive prepends the value
+  // assigned to $_GET['q'] with a slash. Moreover we can always have a trailing
+  // slash in place, hence we need to normalize $_GET['q'].
+  $path = ltrim($path, '/');
+
+  return $path;
+}

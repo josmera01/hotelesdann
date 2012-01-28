@@ -1,0 +1,221 @@
+[19-Oct-2011 22:13:04] PHP Warning:  POST Content-Length of 9688288 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[20-Oct-2011 00:21:07] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/dann/public_html/sites/all/modules/field_display_label/field_display_label.module on line 11
+[20-Oct-2011 22:11:05] PHP Fatal error:  Cannot redeclare template_preprocess() (previously declared in /home/dann/public_html/includes/theme.inc:2054) in /home/dann/public_html/sites/all/themes/dann/template.php on line 16
+[20-Oct-2011 22:11:08] PHP Fatal error:  Cannot redeclare template_preprocess() (previously declared in /home/dann/public_html/includes/theme.inc:2054) in /home/dann/public_html/sites/all/themes/dann/template.php on line 16
+[20-Oct-2011 22:11:13] PHP Fatal error:  Cannot redeclare template_preprocess() (previously declared in /home/dann/public_html/includes/theme.inc:2054) in /home/dann/public_html/sites/all/themes/dann/template.php on line 16
+[20-Oct-2011 22:11:44] PHP Fatal error:  Cannot redeclare template_preprocess() (previously declared in /home/dann/public_html/includes/theme.inc:2054) in /home/dann/public_html/sites/all/themes/dann/template.php on line 16
+[20-Oct-2011 22:11:51] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:51] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:53] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:53] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:56] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:56] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:57] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:57] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:57] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:11:57] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:04] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:04] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:10] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:10] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:19] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:19] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:20] PHP Warning:  Unterminated comment starting line 13 in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[20-Oct-2011 22:12:20] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/dann/public_html/sites/all/themes/dann/template.php on line 13
+[26-Oct-2011 01:45:07] PHP Fatal error:  Call to a member function options_validate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/admin.inc on line 4127
+[26-Oct-2011 01:45:11] PHP Fatal error:  Call to a member function options_validate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/admin.inc on line 4127
+[26-Oct-2011 01:45:15] PHP Fatal error:  Call to a member function options_validate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/admin.inc on line 4127
+[26-Oct-2011 23:24:38] PHP Fatal error:  Cannot use object of type stdClass as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 64
+[26-Oct-2011 23:24:45] PHP Fatal error:  Cannot use object of type stdClass as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 64
+[26-Oct-2011 23:54:41] PHP Fatal error:  Call to undefined function db_selectd() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 57
+[27-Oct-2011 00:13:52] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:15:10] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:15:36] PHP Fatal error:  Cannot unset string offsets in /home/dann/public_html/includes/entity.inc on line 167
+[27-Oct-2011 00:15:51] PHP Fatal error:  Cannot unset string offsets in /home/dann/public_html/includes/entity.inc on line 167
+[27-Oct-2011 00:16:16] PHP Fatal error:  Cannot unset string offsets in /home/dann/public_html/includes/entity.inc on line 167
+[27-Oct-2011 00:16:47] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:16:49] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:20:43] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:30:47] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:30:52] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:30:52] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:30:52] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:30:52] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:30:53] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:30:53] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:31:01] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:31:01] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:31:10] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:31:10] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:31:11] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:34:04] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:45:24] PHP Fatal error:  Cannot use object of type DatabaseStatementBase as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 72
+[27-Oct-2011 00:45:26] PHP Fatal error:  Cannot use object of type DatabaseStatementBase as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 72
+[27-Oct-2011 00:45:28] PHP Fatal error:  Cannot use object of type DatabaseStatementBase as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 72
+[27-Oct-2011 00:45:31] PHP Fatal error:  Cannot use object of type DatabaseStatementBase as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 72
+[27-Oct-2011 00:45:32] PHP Fatal error:  Cannot use object of type DatabaseStatementBase as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 72
+[27-Oct-2011 00:45:32] PHP Fatal error:  Cannot use object of type DatabaseStatementBase as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 72
+[27-Oct-2011 00:54:19] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:54:35] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:54:39] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:58:22] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:58:24] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:58:24] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:58:24] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:59:15] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 00:59:18] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 12:35:33] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 12:41:00] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 12:46:23] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 12:52:25] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 13:48:37] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:49:37] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:49:52] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:51:06] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:51:19] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:51:21] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:51:35] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:51:56] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:51:58] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:52:31] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:52:33] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:52:34] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:52:46] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:52:48] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:52:50] PHP Fatal error:  Call to undefined function node_laod() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 71
+[27-Oct-2011 13:58:47] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 14:00:58] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[27-Oct-2011 23:33:09] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:33] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:38] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:38] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:40] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:47] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:49] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:53] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:54] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:33:59] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:02] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:05] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:07] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:21] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:23] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:24] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:25] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[27-Oct-2011 23:34:28] PHP Parse error:  syntax error, unexpected T_ELSE in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 66
+[28-Oct-2011 23:37:39] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/modules/node/node.module on line 1361
+[29-Oct-2011 10:49:18] PHP Fatal error:  Call to undefined function date_popup_load() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 205
+[29-Oct-2011 10:49:32] PHP Fatal error:  Call to undefined function date_popup_load() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 205
+[29-Oct-2011 10:50:46] PHP Fatal error:  Call to undefined function date_popup_load() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 205
+[29-Oct-2011 12:29:34] PHP Parse error:  syntax error, unexpected T_RETURN in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 52
+[29-Oct-2011 12:29:49] PHP Parse error:  syntax error, unexpected T_RETURN in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 52
+[07-Nov-2011 09:17:55] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:18:05] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:18:13] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:18:35] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:18:42] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:18:45] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:18:50] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:18:51] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:19:00] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 10:19:06] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:19:12] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 10:19:14] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:19:38] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 09:19:49] PHP Fatal error:  Call to a member function translate() on a non-object in /home/dann/public_html/sites/all/modules/views/includes/base.inc on line 157
+[07-Nov-2011 14:55:31] PHP Parse error:  syntax error, unexpected '<' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[07-Nov-2011 13:55:36] PHP Parse error:  syntax error, unexpected '<' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[07-Nov-2011 13:55:43] PHP Parse error:  syntax error, unexpected '<' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[07-Nov-2011 22:09:19] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 337
+[08-Nov-2011 22:12:31] PHP Parse error:  syntax error, unexpected ':' in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 260
+[08-Nov-2011 22:19:22] PHP Fatal error:  Call to undefined function _add_padre_taxonomia() in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 2
+[09-Nov-2011 19:39:40] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:39:41] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 19:39:44] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 19:39:48] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:39:54] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:39:54] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:39:54] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:39:56] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:39:56] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:39:57] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 20:40:02] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 164
+[09-Nov-2011 20:40:13] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 279
+[09-Nov-2011 21:33:22] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:33:30] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:33:30] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:34:07] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:34:12] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:34:12] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:35:10] PHP Parse error:  syntax error, unexpected ';' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:35:16] PHP Parse error:  syntax error, unexpected ';' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:35:17] PHP Parse error:  syntax error, unexpected ';' in /home/dann/public_html/sites/all/modules/ds/ds.module(674) : eval()'d code on line 1
+[09-Nov-2011 21:37:26] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 375
+[09-Nov-2011 21:37:26] PHP Parse error:  syntax error, unexpected '<' in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 375
+[09-Nov-2011 21:40:21] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 164
+[09-Nov-2011 21:53:01] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:05] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:20] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:47] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:47] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:47] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:50] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:50] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:51] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:51] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:53] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:54] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:54] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:54] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:57] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:57] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:57] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:53:57] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:07] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:07] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:07] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:12] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:13] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:13] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:13] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:19] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:19] PHP Fatal error:  Call to undefined function _get__360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:37] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:38] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:38] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:48] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:48] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:54:48] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:55:00] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:55:00] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:55:36] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 21:55:36] PHP Fatal error:  Call to undefined function _get_360() in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 14
+[09-Nov-2011 22:36:52] PHP Fatal error:  Unsupported operand types in /home/dann/public_html/includes/form.inc on line 995
+[10-Nov-2011 20:13:30] PHP Fatal error:  Cannot use object of type stdClass as array in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 495
+[10-Nov-2011 20:37:54] PHP Parse error:  syntax error, unexpected T_PRINT in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 14
+[10-Nov-2011 20:38:12] PHP Parse error:  syntax error, unexpected T_PRINT in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 14
+[10-Nov-2011 20:38:45] PHP Parse error:  syntax error, unexpected T_PRINT in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 14
+[10-Nov-2011 20:38:52] PHP Parse error:  syntax error, unexpected T_PRINT in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 14
+[10-Nov-2011 20:47:49] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 21
+[10-Nov-2011 20:48:25] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 22
+[10-Nov-2011 20:49:32] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 22
+[10-Nov-2011 20:50:18] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:50:50] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:51:24] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:51:49] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:52:15] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:52:16] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:52:46] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:53:09] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:53:11] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:53:48] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 25
+[10-Nov-2011 20:53:49] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 25
+[10-Nov-2011 20:54:11] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:54:13] PHP Parse error:  syntax error, unexpected $end in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 26
+[10-Nov-2011 20:59:37] PHP Parse error:  syntax error, unexpected '{' in /home/dann/public_html/sites/all/themes/dann/templates/region--menu.tpl.php on line 14
+[10-Nov-2011 22:13:29] PHP Parse error:  syntax error, unexpected '}' in /home/dann/public_html/sites/all/modules/globalredirect/globalredirect.module on line 173
+[10-Nov-2011 22:13:44] PHP Parse error:  syntax error, unexpected '}' in /home/dann/public_html/sites/all/modules/globalredirect/globalredirect.module on line 154
+[10-Nov-2011 22:14:05] PHP Parse error:  syntax error, unexpected '}' in /home/dann/public_html/sites/all/modules/globalredirect/globalredirect.module on line 154
+[10-Nov-2011 21:56:29] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 325
+[10-Nov-2011 21:56:36] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 325
+[10-Nov-2011 21:56:49] PHP Parse error:  syntax error, unexpected T_STRING in /home/dann/public_html/sites/all/modules/custom_dann/custom_dann.module on line 325
