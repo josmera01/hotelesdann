@@ -2016,3 +2016,9 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
 	margin-bottom:0.5em;
 	}
 
+#LiveChat_1327681466 {
+	position: fixed;
+	top: 100px;
+	right: 0px;
+	z-index:10000;
+	}
