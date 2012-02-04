@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Boton facebook feature.
+ */
+
+include_once('boton_facebook.features.inc');
