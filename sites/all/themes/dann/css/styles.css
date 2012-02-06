@@ -2022,3 +2022,71 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
 	right: 0px;
 	z-index:10000;
 	}
+.field-name-boton-facebook{
+	clear: both;
+	margin: 0 0 30px 40px;
+} 
+.node-destino, .node-atractivo-turistico {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	}
+.node-destino .group_izquierda, .node-atractivo-turistico .group_izquierda {
+	float: left;
+	width: 55%;
+	margin-left: 3em;
+	padding-right: 3em;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #EEECE7;
+	}
+.banner-destino {
+	margin-bottom: 3em;
+	}
+.node-destino .group_izquierda h1, .node-atractivo-turistico .group_izquierda h1 {
+	font-size: 40px;
+	margin-bottom: 0.5em;
+}
+.node-destino .group_izquierda .body, .node-atractivo-turistico .group_izquierda body {
+	margin-top: 1em;
+}
+.node-destino .group_izquierda p, .node-atractivo-turistico .group_izquierda p {
+	margin-bottom: 1em;
+	}
+.node-destino .group_izquierda h2, .node-atractivo-turistico .group_izquierda h2 {
+	font-size: 1.2em;
+	margin-bottom: 0.4em;
+	margin-top: 1em;
+}
+.node-destino .group_derecha, .node-atractivo-turistico .group_derecha {
+	float: right;
+	width: 30%;
+	font-size:0.76em;
+	margin-right:1em;
+	}
+.datos-generales li {
+	background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+	background-position: 0 0.1em;
+	background-repeat: no-repeat;
+	margin-top: 0.5em;
+	margin-right: 0;
+	margin-bottom: 0.2em;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 1.5em;
+}
+.group_derecha h2 {
+	font-size:1.3em;
+	font-weight:bold;
+}
+.datos-generales {
+	margin-top:2em;
+	}
+.hoteles-en-destino .item-list ul li {
+	margin-left: 0px;
+}
+.hoteles-en-destino .item-list ul {
+	margin-top: 1em;
+}
