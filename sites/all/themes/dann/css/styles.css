@@ -1748,10 +1748,9 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
     display: block;
     margin: 0em 0em 2em 2.5em;
     padding: 0em 0em 1.5em 0em;
-    background-image: url("/sites/all/themes/dann/images/generales/icono-organico.png");
-    background-position: bottom center;
-    background-repeat: no-repeat;
     overflow: hidden;
+	width:45%;
+	float:left;
 }
 .node-type-360-photograph .group-right .field-name-body p{
     width: 33em;
@@ -1767,7 +1766,14 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
     background-position: bottom center;
     background-repeat: no-repeat;
     margin: 0em 0em 1em 0em;
+	clear:both;
 }
+
+.node-type-360-photograph .fb-like.fb_edge_widget_with_comment.fb_iframe_widget {
+	float:right;
+	width:48%;
+	}
+
 .node-type-360-photograph .group-right #block-custom-dann-view-360 h2{
     font-size: 1.25em;
     margin: 0em 0em 1em 0em;
