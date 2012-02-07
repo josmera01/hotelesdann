@@ -2053,7 +2053,7 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
 	font-size: 40px;
 	margin-bottom: 0.5em;
 }
-.node-destino .group_izquierda .body, .node-atractivo-turistico .group_izquierda body {
+.node-destino .group_izquierda .body, .node-atractivo-turistico .group_izquierda .body, .node-atractivo-turistico .body  {
 	margin-top: 1em;
 }
 .node-destino .group_izquierda p, .node-atractivo-turistico .group_izquierda p {
@@ -2070,7 +2070,7 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
 	font-size:0.76em;
 	margin-right:1em;
 	}
-.datos-generales li {
+.datos-generales li, .como-llegar li {
 	background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
 	background-position: 0 0.1em;
 	background-repeat: no-repeat;
@@ -2082,6 +2082,9 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
 	padding-right: 0;
 	padding-bottom: 0;
 	padding-left: 1.5em;
+}
+.como-llegar h2 {
+	margin-top: 1em;
 }
 .group_derecha h2 {
 	font-size:1.3em;
@@ -2124,3 +2127,21 @@ display: inline;
 	border-top-color: #999;
 	padding-top: 1em;
 	}
+.galeria-fotos .lightbox-processed {
+	margin-right: 0.5em;
+	margin-bottom: 0.5m;
+	}
+.galeria-fotos {
+	margin-bottom:3em;
+	}
+.group_derecha #gmap-auto2map-gmap0 {
+	margin-top:1em;
+	margin-bottom:2em;
+	}
+.hoteles-cercanos {
+	margin-bottom:2em;}
+.como-llegar p {
+	font-size:1em;
+	margin-top:0.5em;}
+.view.view-atractivos.view-id-atractivos.view-display-id-block_1.view-dom-id-1 li {
+	margin-bottom:1em;}
