@@ -220,7 +220,7 @@ function _get_booking(){
     }
  
 }
-
+	
 function _get_booking_code($id){
     
     $output .='<form method="get" action="https://gc.synxis.com/rez.aspx" id="booking-form">';
@@ -365,8 +365,9 @@ function _get_booking_code($id){
         alert("hola");
     });
      });', 'inline'); */
-     return $output;
-    
+ 	drupal_add_js(drupal_get_path('module', 'custom_dann') . '/js/EventsAnalitycs.js');
+    return $output;
+     
 }
 
 function node_get_title($nid){
@@ -376,7 +377,7 @@ function node_get_title($nid){
                  ->execute();
  foreach ($result AS $value){
      $title = $value->title;
- }
+ } 
  return strtolower($title);
 
 }
@@ -546,6 +547,7 @@ function _get_booking_home(){
 </div> 
 
       ';
+	drupal_add_js(drupal_get_path('module', 'custom_dann') . '/js/EventsAnalitycs.js');
 
     return $output;
 }
@@ -598,3 +600,6 @@ function _boton_booking_hotel(){
   $id = $node[$nid]->field_booking['und'][0]['value'];
   return l(t('See availability'), 'https://gc.synxis.com/rez.aspx?chain=13317&hotel='.$id);
 }
+	
+
+	
