@@ -15,7 +15,53 @@
 
 
 function dann_preprocess_html(&$variables) {
-   $element = array(
+	
+/*Implementación de metaetiquedao para multisitios SEO (Google) "rel="alternate" hreflang="x" "*/ 
+$language =$variables['language']->language;
+$en_language = array(
+    '#type' => 'html_tag',
+    '#tag' => 'link',
+    '#attributes' => array(
+      'rel' => 'alternate',
+      'hreflang' => 'en',
+      'href' => 'http://www.hotelesdann.com/en/'
+   ));
+   
+  $es_language = array(
+    '#type' => 'html_tag',
+    '#tag' => 'link',
+    '#attributes' => array(
+      'rel' => 'alternate',
+      'hreflang' => 'es',
+      'href' => 'http://www.hotelesdann.com/es/'
+   ));
+   
+  $pt_language = array(
+    '#type' => 'html_tag',
+    '#tag' => 'link',
+    '#attributes' => array(
+      'rel' => 'alternate',
+      'hreflang' => 'pt',
+      'href' => 'http://www.hotelesdann.com/pt/'
+   ));     
+  if($language=="es"){
+    drupal_add_html_head( $en_language, 'en_language');
+    drupal_add_html_head( $pt_language, 'pt_language');
+
+  }
+  if($language=="en"){
+    drupal_add_html_head( $es_language, 'es_language');
+    drupal_add_html_head( $pt_language, 'pt_language');
+  }
+  
+  if($language=="pt-br"){
+    drupal_add_html_head( $es_language, 'es_language');
+    drupal_add_html_head( $en_language, 'en_language');
+  }
+/*FIn de implementación de etiquetas "rel="alternate" hreflang="x""*/
+
+
+  $element = array(
   '#tag' => 'link', // The #tag is the html tag - <link />
   '#attributes' => array( // Set up an array of attributes inside the tag
     'href' => 'http://fonts.googleapis.com/css?family=Tenor+Sans&subset=latin',
