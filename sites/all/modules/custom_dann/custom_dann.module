@@ -3,6 +3,7 @@
  * Impletacion hook_block_view
  */
 function custom_dann_block_view($delta = ''){
+
 switch ($delta) {
 
     case 'header-internas':
@@ -34,10 +35,9 @@ switch ($delta) {
       $block['subject'] = t('Bloque boton booking');
       $block['content'] = _boton_booking_hotel();
       break;    
-
-
   }
   return $block;
+
 }
 /*
  * Impletacion hook_block_info
@@ -600,6 +600,37 @@ function _boton_booking_hotel(){
   $id = $node[$nid]->field_booking['und'][0]['value'];
   return l(t('See availability'), 'https://gc.synxis.com/rez.aspx?chain=13317&hotel='.$id);
 }
-	
 
+function custom_dann_module_implements_alter(&$implementations, $hook) {
+if ($hook == 'node_view_alter') {
+  drupal_add_js("jQuery(document).ready(function(){
+    jQuery(document).ready(function(){
+    function usuarioNuevo(){
 	
+  cookies=document.cookie.split(';');
+  tmp = cookies[1].split('.');
+  if(tmp[5]==1){
+		return true;
+  }
+  return false;
+}
+if(usuarioNuevo()){
+  jQuery('li.es').click(function(){
+    _gaq.push(['_trackEvent', 'Test','Change Language','Español']);
+    console.log('Espaniol');
+  });
+  jQuery('li.en').click(function(){
+    _gaq.push(['_trackEvent', 'Test','Change Language','Inglés']);
+     console.log('english');
+  });
+  jQuery('li.pt-br').click(function(){
+    _gaq.push(['_trackEvent', 'Test','Change Language','Portugués']);
+   console.log('port');
+  });
+}
+});
+
+  });","inline");
+
+}
+}
