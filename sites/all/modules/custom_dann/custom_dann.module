@@ -192,6 +192,7 @@ function _get_views_rooms(){
 
 
 function _get_booking(){
+	
     $nid  = arg(1);
     if(is_numeric($nid)){
         $node = entity_load('node', array($nid) );
@@ -222,14 +223,26 @@ function _get_booking(){
 }
 	
 function _get_booking_code($id){
-    
+      global $language;
+	$locale="";
+	if($language->language=="es"){
+	  $locale="es-ES";
+	}
+	if($language->language=="en"){
+	  $locale="en-US";
+	}
+	if($language->language=="pt-br"){
+	  $locale="pt-PT";
+	}
+ 
+
     $output .='<form method="get" action="https://gc.synxis.com/rez.aspx" id="booking-form">';
   $output  .='<fieldset>';
   $output .='<legend class="accesibility">Reservar una habitación</legend>';
 
       $output .= '<input type="hidden" value="13317" name="chain"> ';
       $output  .= '<input type="hidden" value="'.$id.'" name="hotel"> <!-- ID de Hotel Casa Dann, cambiar según el nodo -->';
-      $output .= '<input type="hidden" value="es-ES" name="locale"> <!-- Variable de idioma, cambia según idioma del sitio Ej: Inglés en-US Portugués pt-PT-->';
+      $output .= '<input type="hidden" value="'.$locale.'" name="locale"> <!-- Variable de idioma, cambia según idioma del sitio Ej: Inglés en-US Portugués pt-PT-->';
       $output .= '<input type="hidden" value="availresults" name="start"> <!-- Variable para indicar al Booking Engine que no muestre la selección de fechas de nuevo (No Modificar) -->';
 
       $output .='<div class="wrapper calendar">';
@@ -384,13 +397,24 @@ function node_get_title($nid){
 
 
 function _get_booking_home(){
+	global $language;
+	$locale="";
+	if($language->language=="es"){
+	  $locale="es-ES";
+	}
+	if($language->language=="en"){
+	  $locale="en-US";
+	}
+	if($language->language=="pt-br"){
+	  $locale="pt-PT";
+	}
     $output ='    <form id="booking-form" action="https://gc.synxis.com/rez.aspx" method="get">
     <fieldset>
       <legend class="accesibility">'.t('Reservar una habitación').'</legend>
       
       <input type="hidden" name="chain" value="13317" /> 
       
-      <input type="hidden" name="locale" value="es-ES" /> 
+      <input type="hidden" name="locale" value="'.$locale.'" /> 
       <input type="hidden" name="start" value="availresults" />
       <select name="hotel" class="required">
        <option value="null">'.t('Select a hotel...').'</option>
