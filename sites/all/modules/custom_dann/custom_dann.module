@@ -89,7 +89,7 @@ function custom_dann_entity_info_alter(&$entity_info) {
 
 
 function _get_header_interna(){
-    
+  
     $nid  = arg(1);
     if(is_numeric($nid)){
         $entity = entity_load('node', array($nid) );
@@ -223,7 +223,7 @@ function _get_booking(){
 }
 	
 function _get_booking_code($id){
-      global $language;
+    global $language;
 	$locale="";
 	if($language->language=="es"){
 	  $locale="es-ES";
@@ -618,6 +618,7 @@ function _padre_taxonomi_tid($tid){
 }
 
 
+
 function _boton_booking_hotel(){
   $nid = arg(1);
   $node = entity_load('node', array($nid));
@@ -656,5 +657,22 @@ if(usuarioNuevo()){
 
   });","inline");
 
+}
+}
+
+function custom_dann_views_pre_view(&$view, &$display_id, &$args) {
+if($view->vid==5 && $display_id=="block_1"){
+  global $language;
+  $current_path = explode("/",$_GET['q']);
+  $hotel = $current_path[1];
+  $query = db_select('url_alias','u_a');
+  $result= $query
+    ->fields('u_a',array('source'))
+    ->condition('alias', $hotel, '=')
+    ->condition('language', $language->language, '=')
+    ->execute();
+  $source=$result->fetchAll();
+  $arg=explode("/",$source[0]->source);
+  $args[]=$arg[1];
 }
 }
