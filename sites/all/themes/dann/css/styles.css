@@ -1261,6 +1261,62 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
 
 /** Página Explore los alrededores (h2) - End **/
 
+/** Página Explore los alrededores (h2) - Start **/
+
+/*******.page-explore .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+}*******/
+#block-system-main .view-explore-alrededores.view-display-id-page_1 .view-content h2{
+    font-size: 2.5em;
+    margin: 0.8em 0em 0.8em 0.9em;
+    display: block;
+}
+#block-system-main .view-explore-alrededores.view-display-id-page_1 .view-content div.description{
+    display: block;
+    margin: 0em 0em 2em 2.5em;
+    overflow: hidden;
+}
+
+#block-system-main .view-explore-alrededores.view-display-id-page_1 .view-content div.description p{
+    width: 33em;
+    float: left;
+    margin: 0em 10em 0em 0em;
+    padding: 0.5em 0em;
+}
+#block-views-explore-alrededores-block-2{
+    float: left;
+    width: 36.875em;
+    margin: 0em 4em 2em 2.5em;
+    overflow: hidden;
+}
+#block-views-explore-alrededores-block-1{
+    float: left;
+    width: 11.875em;
+    margin: 0em 0em 2em 0em;
+    overflow: hidden;
+}
+#block-views-explore-alrededores-block-1 h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.page-explore2 #region-content{
+	background:white;
+}
+.page-explore .view-explore-alrededores .view-content div.a-donde-ir ul li{
+    font-size: 0.8em;
+    margin: 0em 0em 0.5em 0em;
+    line-height: 110%;
+}
+
+/** Página Explore los alrededores (h2) - End **/
+
 /** Página Organice eventos (h3) - Start **/
 
 /*******.page-eventos .region-content .block-system-main{
