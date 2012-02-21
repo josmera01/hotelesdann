@@ -115,6 +115,7 @@ function _get_header_interna(){
                 ->fields('n')
                  ->condition('title', $url,'=')
                   ->condition('language', $language->language)
+                  ->condition('n.type','slider_home','<>')
                  ->execute();
          foreach($result AS $value){
                 $nid = $value->nid;
@@ -659,9 +660,43 @@ if(usuarioNuevo()){
 
 }
 }
+function custom_dann_gmap($op, &$map) { 
+switch($op){
+case "pre_theme_map":
+      if(sizeof($map['markers'])>1){
+        global $language;
+        $current_path = explode("/",$_GET['q']);
+		$hotel = $current_path[1];
+		$query = db_select('url_alias','u_a');
+		$result= $query
+		  ->fields('u_a',array('source'))
+		  ->condition('alias', $hotel, '=')
+		  ->condition('language', $language->language, '=')
+		  ->execute();
+		$source=$result->fetchAll();
+		$arg=explode("/",$source[0]->source);
+		$nid=$arg[1];
+		
+		$query = db_select('field_data_field_gmap_location', 'f');
+        $query->join('location', 'l', 'f.field_gmap_location_lid = l.lid'); //JOIN node with users
+        $query->groupBy('l.lid');//GROUP BY user ID
+        $query->condition('f.entity_id', $nid, '=');
 
+        $query->fields('l',array('latitude','longitude'))//SELECT the fields from node
+         ->range(0,1);//LIMIT to 2 records
+        $result = $query->execute();
+        $coordenadas=$result->fetchAll();
+		gmap_regenerate_markers();
+        $map['latitude']=$coordenadas[0]->latitude; 
+        $map['longitude']=$coordenadas[0]->longitude;
+		
+  }
+;break;
+
+}
+}
 function custom_dann_views_pre_view(&$view, &$display_id, &$args) {
-if($view->vid==5 && $display_id=="block_1"){
+if($view->vid==5 && $display_id=="block_1" || $display_id=="block_2"){
   global $language;
   $current_path = explode("/",$_GET['q']);
   $hotel = $current_path[1];
