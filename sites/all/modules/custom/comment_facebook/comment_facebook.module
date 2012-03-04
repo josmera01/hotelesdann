@@ -1,0 +1,67 @@
+<?php
+
+
+/**
+* Implements hook_block_info
+**/
+
+function comment_facebook_block_info(){
+	$blocks['block-comment-fb'] = array(
+    'info' => t('Bloque comentarios'),
+
+  );
+
+	return $blocks;
+}
+
+/*
+ * Implements hook_block_view
+ */
+
+function comment_facebook_block_view($delta){
+	
+	switch ($delta) {
+
+	    case 'block-comment-fb':
+	      $block['subject'] = t('Bloque comentarios');
+	      $block['content'] = _get_comment_fb();
+	    break;
+	}
+	return $block;
+
+}
+
+/**
+*	Funcion para crear los comentarios de facebook, con drupal_render();
+**/
+
+function _get_comment_fb(){
+
+	global $base_url;
+
+	$url = $base_url .'/'. $_GET['q'];
+
+
+	$content['js'] = array(
+	'#type' => 'markup',
+ 	'#markup' => '
+ 		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+  			fjs.parentNode.insertBefore(js, fjs);
+		}(document, \'script\', \'facebook-jssdk\'));</script>
+ 	',
+ 	);
+
+	$content['content'] = array(
+	'#type' => 'markup',
+ 	'#markup' => '<div class="fb-comments" data-href="  '. $url .' " data-num-posts="30" data-width="740"></div>',
+ 	);
+
+	return $content;
+}
+
+

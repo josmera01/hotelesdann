@@ -1,0 +1,7 @@
+; $Id$
+name = Comentarios facebook
+description = Modulo para mostra los comentarios
+package = dann
+core = 7.x
+
+files[] = comment_facebook.module

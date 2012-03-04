@@ -2208,3 +2208,7 @@ display: inline;
 #block-views-slideshow-block .block-title{
   display:none;
 }
+
+.block-view-360{
+    clear: both;
+}
