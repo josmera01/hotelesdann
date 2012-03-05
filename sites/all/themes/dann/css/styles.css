@@ -2208,7 +2208,149 @@ display: inline;
 #block-views-slideshow-block .block-title{
   display:none;
 }
-
-.block-view-360{
-    clear: both;
+/** Hoteles - Start**/
+.view-hotel.view-id-hotel h1 {
+    font-size: 2.5em;
+    line-height: 110%;
+    margin-bottom: 1em;
+    padding: 1em 1em 0;
 }
+.view-hotel.view-id-hotel h2{
+  font-size:1.5em;
+  margin-top:2em;
+  margin-bottom:1em;
+}
+.view-hotel.view-id-hotel h2 a {
+  color:#666666;
+
+}
+.view-hotel.view-id-hotel h2 a:hover{
+  text-decoration:underline;
+}
+
+.view-hotel.view-id-hotel .view-content .views-row {
+    clear: both;
+    display: block;
+    margin: 2em auto;
+    width: 875px;
+}
+.view-hotel.view-id-hotel .view-content .views-row .vistarapida-tab{
+  background: none repeat scroll 0 0 #DAE4EF;
+  overflow:hidden;
+}
+.view-hotel.view-id-hotel .view-content .tab{
+  background:#DAE4EF;
+  color: #5587b9;
+}
+.view-hotel.view-id-hotel .view-content .tab a{
+  color: #5587b9;
+}
+.view-hotel.view-id-hotel .view-content .tab.comodidades{
+  display:none;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab #first{
+  display: block;
+  float: left;
+  width: 20em;
+  margin-right:1.5em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab #first a{
+  display:block;
+  margin-top:0.5em;
+  margin-left:3em;
+  color:#5c5f61;
+  text-decoration:underline;
+  margin-bottom:1em;
+}
+ 
+.view-hotel.view-id-hotel .view-content .vistarapida-tab img{
+  padding: 1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .cont{
+  display: block;
+  float: left;
+  margin-left: 1em;
+  width: 15em;
+  margin-top:1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .stars{
+  background: url("/sites/all/themes/dann/images/h-inicio-hotel/stars.png") no-repeat scroll 0 0 transparent;
+  height: 25px;
+  margin-bottom: 1em;
+  width: 145px;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq address{
+  font-weight:bold;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .city{
+  margin-bottom: 1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .phone{
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  line-height:135%;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der {
+
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der .label{
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der a.botonNaranja {
+    background-color: #FF6600;
+    background-image: -moz-linear-gradient(center bottom , #FF6600 0%, #FF9900 100%);
+    border: 0.0625em solid #FF9900;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 1px 1px 1px #333333;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-top: 2em;
+    padding: 0.4em 1em;
+    text-align: center;
+    width: 52%;
+}
+
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .botonAzul {
+    background-color: #39628a;
+    background-image: -moz-linear-gradient(center bottom , #39628a 0%, #5485b7 100%);
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 1px 1px 1px #333333;
+    color: white;
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 3em;
+    margin-left: 0.5em;
+    margin-top: 2em;
+    padding: 0.4em 1em;
+    text-align: center;
+    width: 14em;
+    float:left;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .botonAzul .label{
+   font-size:0.85em;
+   padding:0.3em;
+   margin-right:1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der ul{
+  padding-left:0.5em;
+}
+
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der ul li {
+    background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+    background-position: 0 0.1em; 
+    background-repeat: no-repeat;
+    font-size: 0.8em;
+    margin: 0 0 0.2em;
+    padding: 0 0 0 1.6em;
+    margin-bottom:0.5em;
+}
+/** Hoteles - End**/
