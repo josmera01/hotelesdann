@@ -1,0 +1,13 @@
+; $Id$
+name = Custom Dann View Hotels
+description = Modulo para optimización de la vista hoteles
+package = dann
+core = 7.x
+
+files[] = custom_dann_view_hotels.module
+
+; Information added by drupal.org packaging script on January 1, 1970 - 00:00
+version = "7.x"
+core = "7.x"
+project = "custom_dann"
+datestamp = "1297036300"

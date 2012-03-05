@@ -1,0 +1,12 @@
+<?php
+/*
+ * Impletacion hook_views_pre_view
+ */
+function custom_dann_view_hotels_views_pre_view(&$view, &$display_id, &$args) {
+if($view->vid==16 && $display_id=='page'){
+  drupal_add_js(drupal_get_path('module', 'custom_dann_view_hotels').'/js/libs/jquery.hashchange.min.js', 'file');
+  drupal_add_js(drupal_get_path('module', 'custom_dann_view_hotels').'/js/libs/jquery.easytabs.js', 'file');
+  drupal_add_js(drupal_get_path('module', 'custom_dann_view_hotels').'/js/tabs.js', 'file');
+  drupal_add_css(drupal_get_path('module', 'custom_dann_view_hotels') . '/css/view-hotels-tabs.css');
+}
+}
