@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Defines a field type for referencing one node from another with the same language.
+ */
+ 
+/**
+ * Implements hook_node_load().
+ */
+function node_reference_language_node_load($nodes, $types) {
+  foreach($nodes as $node){
+    variable_set('nlang', $node->language);	
+  }
+  if(variable_get('nlang')==''){
+    variable_set('nlang', $node->language);	  
+  }  
+  if(!empty($_GET['target'])){
+    variable_set('nlang',$_GET['target']);	  
+ 
+  }
+}

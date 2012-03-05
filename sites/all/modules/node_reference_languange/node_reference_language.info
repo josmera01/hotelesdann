@@ -1,0 +1,10 @@
+; $Id$
+name = Node Reference Language
+package = dann
+core = 7.x
+version = 7.x-1.0
+
+files[] = node_reference_language.module
+dependencies[] = references 
+dependencies[] = locale
+
