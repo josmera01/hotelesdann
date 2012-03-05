@@ -2354,3 +2354,23 @@ display: inline;
     margin-bottom:0.5em;
 }
 /** Hoteles - End**/
+/** Explore - Start**/
+.view-explore-alrededores.view-display-id-block_1 .views-row  {
+    font-size: 0.8em;
+    margin-bottom:1em;
+    
+}
+.view-explore-alrededores.view-display-id-block_1 .views-row  a{
+    margin-bottom:1em;
+    display:block;
+    color:#666666;
+}
+.view-explore-alrededores.view-display-id-block_1 .views-row  a:hover{
+  text-decoration:underline;
+}
+#block-views-explore-alrededores-block-1 .block-title  {
+  font-size: 1.3em;
+  font-weight: bold;    
+  margin-bottom:1em;
+}
+/** Explore - End**/
