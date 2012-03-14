@@ -1,0 +1,469 @@
+/* 
+    Document   : css-custom
+    Created on : 29-oct-2011, 17:28:32
+    Author     : macbook
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#zone-header-top #region-menu {
+	
+	}
+ul#main-menu {
+	font-size: 0.7em;
+	float: right;
+	}
+ul#main-menu li {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+#section-header .grid-4.region.region-preface-second {
+	float: right;
+	}
+
+.field-content.body p {
+
+	}
+.page-home #booking-form {
+	botton: 0px;
+	}
+	
+/* ESTILOS PAGINA BASICA */
+
+.paginaBasica {
+	padding: 3em;
+	}
+	
+.paginaBasica h1 {
+	font-size: 2.5em;
+	line-height: 110%;
+	margin-top: 0em;
+	margin-right: 0;
+	margin-bottom: 1em;
+	margin-left: 0em;
+}
+.paginaBasica p{
+  margin: 1em 0;
+}
+.paginaBasica ul{
+  margin:1.5em 0;
+  padding-left:2em;
+}
+.hotelDann {
+	float: left;
+	width: 29%;
+-o-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-webkit-transition: all .2s linear;
+	margin-bottom: 0em;
+	overflow: hidden;
+	padding: 0.8em;
+	}
+.hotelDann:hover {
+	background-color: #F9F9F9;
+-o-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-webkit-transition: all .2s linear;
+	}
+.caracteristicasHotel {
+	
+	}
+.caracteristicasHotel p {
+	width: 80%;
+}
+
+.filaHotel {
+	clear: both;
+	}
+.paginaBasica .hotelDann h2 {
+	font-size: 1em;
+	}
+.paginaBasica .hotelDann h2 span {
+	font-size: 0.7em;
+	display: block;
+	}
+.paginaBasica .hotelDann ul {
+	font-size: 0.7em;
+	}
+.paginaBasica h2 {
+	  font-size: 1.25em;
+    line-height: 110%;
+    margin: 0 0 1em;
+}
+.paginaBasica ul {
+  color: #333333;
+    font-size: 0.8em;
+    line-height: 135%;
+}
+.imagenHotel {
+	margin-bottom: 1em;
+	margin-right: 1em;
+	}
+.paginaBasica li {
+	background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+	background-position: 0 0.1em;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0.2em;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 1.5em;
+}
+.paginaBasica ul {
+	margin-top: 0.5em;
+}
+
+
+.fotoPlan {
+	float: left;x
+	margin-right: 1em;
+	}
+.tipoPlan {
+	clear: both;
+	margin-bottom: 4em;
+	overflow: hidden;
+	}
+.tipoPlan ul, .tipoPlan p {
+	padding-left: 460px;
+}
+.destinoDann {
+	float: left;
+	width: 27%;
+	padding: 1em;
+	-o-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-webkit-transition: all .2s linear;
+	}
+.destinoDann:hover {
+	background-color: #F6F6F6;
+	-o-transition: all .2s linear;
+-moz-transition: all .2s linear;
+-webkit-transition: all .2s linear;
+}
+.fila {
+	overflow: hidden;
+    background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/icono-organico.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+	clear:both;
+	}
+.eventosA {
+	float: left;
+	width: 45%;
+	margin-right: 3em;
+	}
+.eventosB {
+		float: right;
+	width: 45%;
+	}
+.fila .hotelDann {
+	padding: 1em;
+	width: 28%;
+	margin-right:0em;
+	}
+.fila .hotelDann h3 {;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+.fila .hotelDann .imagenHotel {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;	
+	float: none;
+}
+.fila .hotelDann .imagenHotel img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a.botonNaranja {
+	background-color: #FF6600;
+	background-image: -moz-linear-gradient(center bottom , #FF6600 0%, #FF9900 100%);
+	border: 0.0625em solid #FF9900;
+	border-radius: 7px 7px 7px 7px;
+	box-shadow: 1px 1px 1px #333333;
+	color: white;
+	cursor: pointer;
+	font-size:1.2em;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	padding-top: 0.7em;
+	padding-right: 1em;
+	padding-bottom: 0.7em;
+	padding-left: 1em;
+	display: block;
+	width: 60%;
+	}
+
+/* ESTILOS MODULO PLANES HOME */
+
+.planesHome {
+	color: #FFF;
+	background-color: #333333;
+	background-image: url("/sites/all/themes/dann/images/generales/fondo-negro-rayado.gif");
+	width: 80%;
+	border-radius: 7px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	padding-left: 2em;
+	margin-bottom: 3em;
+	}
+.planesHome h2 {
+	font-size: 1.57em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.planesHome a {
+	color: #FFF;
+	text-decoration: none;
+}
+.planesHomeDestacados {
+	float: left;
+	margin-right: 1em;
+	margin-left: 1em;
+	}
+
+
+/* CAMBIAR LENGUAJE */
+
+.language-switcher-locale-url .es {
+	background-image: url(/sites/all/themes/dann/images/generales/flag-spain.png);
+	height: 1.6em;
+	background-repeat: no-repeat;
+	padding-left: 2em;	
+	}
+.language-switcher-locale-url .en {
+	background-image: url(/sites/all/themes/dann/images/generales/flag-uk.png);
+	height: 1.6em;
+	background-repeat: no-repeat;
+	padding-left: 2em;	
+	}
+.language-switcher-locale-url .pt-br {
+	background-image: url(/sites/all/themes/dann/images/generales/flag-brasil.png);
+	height: 1.6em;
+	background-repeat: no-repeat;
+	padding-left: 2em;
+	}
+
+/* TELEFONOS REDES */
+
+#telefonosRedes {
+	background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/fondo-booking-interno.png");
+    display: block;
+    float: right;
+    height: 8em;
+    overflow: hidden;
+    padding: 1em;
+    width: 37em;
+	background-repeat: repeat;
+    bottom: 0em;
+    height: 1em;
+    left: 19.95em;
+    position: absolute;
+    z-index: 500;
+	}
+#telefonosRedes .telefono {
+	float: left;
+	color:#FFF;	
+	font-size: 0.9em;
+}
+#telefonosRedes ul li {
+	display: inline;
+	text-align: right;
+}
+#telefonosRedes ul {
+float: right;
+position: absolute;
+top: 10px;
+right: 10em;
+}
+#telefonosRedes .telefono span {
+background-image: url("/sites/all/themes/dann/images/generales/flag-colombia-transparente.png");
+    background-position: 0 -0.15em;
+    background-repeat: no-repeat;
+    padding: 0 0 0 2em;
+	margin-left: 1em;
+}
+
+element.style {
+    display: block;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal {
+    background-position: 0 -32px;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+}
+
+.jcarousel-skin-default .jcarousel-next, .jcarousel-skin-default .jcarousel-prev {
+    background-image: url("/sites/all/themes/dann/images/generales/flechas-carrusel.png");
+}
+
+
+.jcarousel-skin-default .jcarousel-prev-disabled-horizontal, .jcarousel-skin-default .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-default .jcarousel-prev-disabled-horizontal:active {
+	background-position: 0px 0;
+}
+
+
+/* MODIFICACION BOOKING ENGINE */
+
+#booking-form .wrapper.calendar input {
+    background: url("/sites/all/themes/dann/images/calendar_icon.png") no-repeat scroll 6.5em center #FFFFFF;
+    width: 8em;
+}
+#booking-form .wrapper.calendar {
+    padding-right: 0em;
+    width: 52%;
+}
+
+/* PLANES Y OFERTAS COMO NAVIDANN */
+
+.recuadroAzul {
+	background-color: #386189;
+	border-radius: 7px 7px 7px 7px;
+	color: #FFFFFF;
+	float: right;
+	text-align: center;
+	text-shadow: 1px 1px 1px #333333;
+	width: 15em;
+	margin-left:6em;
+	padding-top: 0em;
+	padding-right: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: 1.5em;
+	}
+.recuadroAzul p {
+	color: #FFFFFF;
+	font-size: 0.9em;
+	margin-top: 1em;
+}
+#hotelesNavidann {
+	clear: both;
+	margin-top: 2em;
+	}
+.bannerSuperior {
+	text-align: center;
+	margin-top: 5px;
+	}
+a.botonCorreo {
+	background-color: #FF6600;
+    background-image: -moz-linear-gradient(center bottom , #FF6600 0%, #FF9900 100%);
+    border: 0.0625em solid #FF9900;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px #333333;
+    clear: both;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    padding: 0.3em 0.5em;
+    text-align: center;
+    text-shadow: none;
+	}
+a.botonCorreo span {
+	font-size: 80%;
+	}
+.condiciones {
+	font-size: 0.9em;
+	clear: both;
+	color: #666;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #999;
+	}
+
+.condiciones p {
+	margin-top: 1em;
+}
+.notaChica {
+	font-size: 0.9em;
+	color: #666;
+	display: block;
+	margin-top: 1em;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #CCC;
+	}
+.bannerHome {
+	margin-right: auto;
+	margin-bottom: 2em;
+	margin-left: auto;
+	width: 824px;
+	}
+#block-locale-language {
+	float: left;
+	}
+#block-search-form {
+	float: right;
+	margin-bottom:0.5em;
+	margin-right:5px;
+	}
+
+#zone-header-bottom {
+	margin-top: 0.5em;
+	}
+.views-field.views-field-field-facade a {
+	height: 80px;
+	overflow:hidden;
+	display: block;
+	}
+.views-field.views-field-field-facade img {
+}
+
+.logo-img img {
+	height: 51px;
+	width: 171px;
+	}
+.field.field-name-field-promocion.field-type-linkimagefield.field-label-hidden {
+	float:right;
+	}
+a.botonReserva {
+	background-color: #FF6600;
+    background-image: -moz-linear-gradient(center bottom , #FF6600 0%, #FF9900 100%);
+    border: 0.0625em solid #FF9900;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px #333333;
+    clear: both;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    padding: 0.3em 0.5em;
+    text-align: center;
+    text-shadow: none;
+	width:60%;
+	}
+#superfish-1 ul {
+	width: 20em !important;
+	}
+#superfish-1 ul li a {
+    background-color: #B3C8DE;
+    border-top-left-radius: 0px  !important;
+    border-top-right-radius: 0px  !important;
+    clear: both;
+    margin-top: 0em;
+    widows: 100;
+    width: 100%;
+	font-size:0.8em;
+	}

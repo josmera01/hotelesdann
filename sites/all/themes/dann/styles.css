@@ -1,0 +1,2392 @@
+/* This file will hold the main styles for your website. */
+
+
+/** Encabezado - Start **/
+
+#section-header{
+	display: block;
+	/*overflow: hidden  --- Retirada para mostrar menu desplegable*/ 
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0em;
+	margin-left: 0;
+}
+
+#zone-header-top{
+    padding: 0;
+}
+#zone-header-top ul{
+    margin: 0.5em;
+}
+ul.language-switcher-locale-url, ul#main-menu{
+    text-transform: uppercase;
+    list-style: none outside none;
+}
+ul.language-switcher-locale-url a, ul#main-menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul.language-switcher-locale-url a:hover, ul#main-menu a:hover{
+    color: #FDEFB2;
+}
+ul.language-switcher-locale-url li.active a, ul#main-menu li.active a, ul#main-menu li.active-trail a{
+    color: #E6BE65;
+}
+ul.language-switcher-locale-url li.active a:hover, ul#main-menu li.active a:hover, ul#main-menu li.active-trail a:hover{
+    color: #FFEA81;
+}
+
+ul.language-switcher-locale-url{
+    font-size: 0.6875em;
+    padding: 0;
+	text-align: right;
+}
+ul.language-switcher-locale-url li{
+    display: inline-block;
+    padding: 0 0.5em
+}
+ul.language-switcher-locale-url  .locale-untranslated{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#zone-header-top #region-menu{
+    
+}
+ul#main-menu{
+    font-size: 0.8125em;
+}
+ul#main-menu li.first{
+
+}
+ul#main-menu li.last{
+    padding-right: 0.3125em;
+}
+
+/*Buscador*/
+
+.branding-data .logo-img{
+	padding-left: 0.3125em;
+	margin-top: 0px;
+	margin-bottom: 0em;
+}
+#search-block-form{
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    float: right;
+    height: 1.5em;
+    margin: 0em 0.3em 0 0;
+    overflow: hidden;
+    padding: 0 0 0 0.5em;
+    width: 100%;
+}
+
+#search-block-form .form-item-search-block-form{
+    float: left;
+    margin: 0.1em 0 0;
+}
+input#edit-search-block-form--2{
+    border: medium none;
+    font-size: 0.7em;
+    margin: 0 0.7em 0 0;
+    padding: 0.3125em 0;
+    width: 21em;
+}
+#search-block-form .form-actions input.form-submit{
+    background-color: #5587B9;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-lupa-buscador.gif");
+    background-position: 0.7em 0.5em;
+    background-repeat: no-repeat;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 24px;
+    width: 24px;
+}
+
+/*Chat*/
+
+a#LiveChat_1320207274_btn{
+    position: fixed;
+    right: 0;
+    top: 5em;
+	z-index: 500;
+}
+
+/** Encabezado - End **/
+
+/** Home - Start **/
+
+ #block-system-main-menu, #block-superfish-1{
+    widows: 100;
+	
+	/* BORRADO TEMPORALMENTE PARA CAMBIAR EL COLOR DEL MENU POR SOLICITUD DE JAIRO 
+    background-image: linear-gradient(bottom, #305385 0%, #5486B8 100%);
+    background-image: -o-linear-gradient(bottom, #305385 0%, #5486B8 100%);
+    background-image: -moz-linear-gradient(bottom, #305385 0%, #5486B8 100%);
+    background-image: -webkit-linear-gradient(bottom, #305385 0%, #5486B8 100%);
+    background-image: -ms-linear-gradient(bottom, #305385 0%, #5486B8 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #305385),
+    color-stop(1, #5486B8)
+    );
+    background-color: #305385;
+	
+	*/
+	    background-image: linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -o-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -moz-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -webkit-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -ms-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #B3C8DE),
+    color-stop(1, #FAFBFD)
+    );
+    background-color: #B3C8DE;
+
+	
+	
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+	clear:both;
+	margin-top: 1em;
+	width:99%;
+}
+ #block-system-main-menu ul, #zone-content-top #block-system-main-menu ul li, #block-superfish-1 ul, #block-superfish-1 ul li{
+    height: 100%;
+}
+ #block-system-main-menu ul li, #block-superfish-1 ul li{
+	float: left;
+	width: 23%;
+	height: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #BFD0E3;
+}
+ #block-system-main-menu ul li a, #block-superfish-1 ul li a{
+    font-size: 0.8em;
+    color: #FFFFFF;
+    display: block;
+    height: 75%;
+    text-align: center;
+    padding: 0.4em 0;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+    text-shadow: 1px 1px 1px #103C6B;
+    text-decoration: none;
+    text-transform: uppercase;
+	
+	
+	    color: #39638C;
+    text-shadow: 1px 1px 1px #FFF;
+	
+	
+	
+}
+ #block-system-main-menu ul li a.active, #block-superfish-1 ul li a.active{
+	
+	/* BORRADO TEMPORAL 
+    background-image: linear-gradient(bottom, #2E4D84 0%, #5385B7 100%);
+    background-image: -o-linear-gradient(bottom, #2E4D84 0%, #5385B7 100%);
+    background-image: -moz-linear-gradient(bottom, #2E4D84 0%, #5385B7 100%);
+    background-image: -webkit-linear-gradient(bottom, #2E4D84 0%, #5385B7 100%);
+    background-image: -ms-linear-gradient(bottom, #2E4D84 0%, #5385B7 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #2E4D84),
+    color-stop(1, #5385B7)
+    );
+    background-color: #2E4D84;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #103C6B;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+	*/
+	
+	    background-image: linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -o-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -moz-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -webkit-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -ms-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #BAC9D8),
+    color-stop(1, #94ADC7)
+    );
+    background-color: #BAC9D8;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #274767;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+	
+	
+}
+ #block-system-main-menu ul li.first a, #block-superfish-1 ul li.first a, #block-system-main-menu ul li.first a:hover, #block-superfish-1 ul li.first a:hover{
+    border-top-left-radius: 7px;
+    }
+ #block-system-main-menu ul li.last a, #block-superfish-1 ul li.last a, #block-system-main-menu ul li.last a:hover, #block-superfish-1 ul li.last a:hover{
+    border-top-right-radius: 7px;
+    }
+ #block-system-main-menu ul li a:hover, #block-superfish-1 ul li a:hover{
+	
+	/* CAMBIO TEMPORAL, BORRAR, POR SOLICITUD DE JAIRO EL MENÚ SE PONE DEL MISMO COLOR QUE EL INTERNO 
+	
+    background-image: linear-gradient(bottom, #426D9F 0%, #5385B7 100%);
+    background-image: -o-linear-gradient(bottom, #426D9F 0%, #5385B7 100%);
+    background-image: -moz-linear-gradient(bottom, #426D9F 0%, #5385B7 100%);
+    background-image: -webkit-linear-gradient(bottom, #426D9F 0%, #5385B7 100%);
+    background-image: -ms-linear-gradient(bottom, #426D9F 0%, #5385B7 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #426D9F),
+    color-stop(1, #5385B7)
+    );
+    background-color: #426D9F;
+    color: #FFF;
+    text-decoration: none;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+	
+	*/
+	
+	
+	    background-image: linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -o-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -moz-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -webkit-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -ms-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #EBEFF4),
+    color-stop(1, #B5C9DD)
+    );
+    background-color: #EBEFF4;
+    text-decoration: none;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+	
+	
+	
+}
+/**Corrigiendo estilos del módulo Superfish**/
+.sf-menu li{
+    z-index: 500;
+}
+.sf-menu.sf-style-default {
+    float: none;
+    margin-bottom: 0;
+}
+.sf-menu.sf-style-default li, .sf-menu.sf-style-default.sf-navbar, .sf-menu.sf-style-default li:hover, .sf-menu.sf-style-default li a:hover{
+    background: none repeat scroll 0 0 transparent;
+}
+/*
+#zone-content-top #block-system-main-menu ul li a.active:hover{
+    background-image: linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -o-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -moz-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -webkit-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -ms-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #EBEFF4),
+    color-stop(1, #B5C9DD)
+    );
+    background-color: #EBEFF4;
+    text-decoration: none;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+}
+*/
+
+.page-home .region-content .block-pagina-de-inicio-block, .page-home .region-content .block-block-9{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    clear: both;
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+}
+
+#block-views-pagina-de-inicio-block .jcarousel-container.jcarousel-container-horizontal{
+    width: 46em;
+    height: 110px;
+    padding: 1em 4.5em;
+}
+#block-views-pagina-de-inicio-block .jcarousel-clip.jcarousel-clip-horizontal{
+    width: 46em;
+}
+#block-views-pagina-de-inicio-block .jcarousel-clip.jcarousel-clip-horizontal ul{
+    height: 180px;
+    min-width: 20000px;
+    font-size: 0.75em;
+    text-align: left;
+}
+#block-views-pagina-de-inicio-block .jcarousel-skin-default .jcarousel-item{
+    width: 118px;
+    height: 180px;
+    border: none;
+}
+#block-views-pagina-de-inicio-block .jcarousel-skin-default .jcarousel-item-horizontal{
+    margin: 0 1.3em;
+}
+
+/** Home - End **/
+
+/** Encabezado Info Hotel - Título y menú - Start **/
+
+/*Título*/
+.group-left{
+    width: 100%;
+}
+h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.view-mode-custom_view, .node-type-hotel .group-header-hotel{
+    background-color: #386189;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    clear: both;
+    display: block;
+    margin: 0 0.3125em;
+    overflow: hidden;
+    padding: 1em 1em 1.5em;
+    width: 56.75em;
+}
+.group-title-wrapper{
+    float: left;
+}
+.group-title-wrapper .field-name-title{
+    color: #FFFFFF;
+    float: left;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #13212F;
+}
+.group-title-wrapper .field-name-field-city{
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    text-shadow: 1px 1px 1px #13212F;
+    font-size: 0.8em;
+
+}
+.group-title-wrapper .field-name-pais{
+    color: white;
+    text-shadow: 1px 1px 1px #13212F;
+    font-size: 0.8em;
+    float: left;
+}
+.group-contact-wrapper{
+    float: right;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.group-contact-wrapper p, .group-contact-wrapper address{
+    color: #FFFFFF;
+    display: block;
+    text-align: right;
+}
+.group-contact-wrapper a{
+    color: #E6BE65;
+}
+/*Menu Hotel*/
+
+.field-name-menu-hotel #sub-menu-hotel, .field-name-field-link-menu{
+    widows: 100;
+    height: 3.4em;
+    background-image: linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -o-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -moz-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -webkit-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -ms-linear-gradient(bottom, #B3C8DE 0%, #FAFBFD 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #B3C8DE),
+    color-stop(1, #FAFBFD)
+    );
+    background-color: #B3C8DE;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    }
+.field-name-menu-hotel ul , .field-name-field-link-menu .field-items{
+    height: 100%;
+    }
+.field-name-menu-hotel ul li, .field-name-field-link-menu .field-items .field-item{
+    float: left;
+    width: 25%;
+    height: 100%;
+    }
+.field-name-menu-hotel ul li a, .field-name-field-link-menu .field-items .field-item a{
+    font-size: 1.1em;
+    color: #39638C;
+    display: block;
+    height: 75%;
+    text-align: center;
+    padding: 0.5em 0;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+    text-shadow: 1px 1px 1px #FFF;
+    }
+.field-name-menu-hotel ul li a span, .field-name-field-link-menu .field-items .field-item a span {
+    display: block;
+    font-size: 0.7em;
+    margin: -0.4em 0em 0em 0em;
+    }
+.field-name-menu-hotel ul li a.first, .field-name-field-link-menu .field-items .field-item a.first{
+    border-top-left-radius: 7px;
+    }
+.field-name-menu-hotel ul li a.last, .field-name-field-link-menu .field-items .field-item a.last{
+    border-top-right-radius: 7px;
+    }
+.field-name-menu-hotel ul li a.active, .field-name-field-link-menu .field-items .field-item a.active{
+    background-image: linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -o-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -moz-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -webkit-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -ms-linear-gradient(bottom, #BAC9D8 0%, #94ADC7 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #BAC9D8),
+    color-stop(1, #94ADC7)
+    );
+    background-color: #BAC9D8;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #274767;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+    }
+.field-name-menu-hotel ul li a:hover, .field-name-field-link-menu .field-items .field-item a:hover{
+    background-image: linear-gradient(bottom, #B5C8DC 0%, #E8ECF3 100%);
+    background-image: -o-linear-gradient(bottom, #B5C8DC 0%, #E8ECF3 100%);
+    background-image: -moz-linear-gradient(bottom, #B5C8DC 0%, #E8ECF3 100%);
+    background-image: -webkit-linear-gradient(bottom, #B5C8DC 0%, #E8ECF3 100%);
+    background-image: -ms-linear-gradient(bottom, #B5C8DC 0%, #E8ECF3 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #B5C8DC),
+    color-stop(1, #E8ECF3)
+    );
+    background-color: #B5C8DC;
+    color: #39638C;
+    text-decoration: none;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+}
+.field-name-menu-hotel ul li a.active:hover, .field-name-field-link-menu .field-items .field-item a.active:hover{
+    background-image: linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -o-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -moz-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -webkit-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -ms-linear-gradient(bottom, #EBEFF4 0%, #B5C9DD 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #EBEFF4),
+    color-stop(1, #B5C9DD)
+    );
+    background-color: #EBEFF4;
+    text-decoration: none;
+    -o-transition: all 1s linear 2s;
+    -moz-transition: all 1s linear 2s;
+    -webkit-transition: all 1s linear 2s;
+}
+/** Encabezado Info Hotel Título y menú - End **/
+
+/** Página interna Hoteles - Start **/
+
+.node-type-hotel .region-content .block-system-main{
+    background-color: transparent;
+}
+
+.node-type-hotel .group-banner{
+/**    width: 59.375em;   ELIMINADO POR MARIO BROSS**/
+    padding: 0em 0.3125em;
+    position: relative;
+    margin: 0em 0em 2em 0em;
+}
+/*Slider*/
+
+.group-right{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+    padding-top: 0em;
+}
+
+.galleryformatter{
+    background-color: #FFFFFF;
+    padding-top: 0.3em;
+}
+
+.galleryformatter-greenarrows .gallery-thumbs{
+	padding: 0;
+	display: none;
+}
+
+.galleryformatter-greenarrows .gallery-thumbs .arrow, .galleryformatter-greenarrows .gallery-thumbs .wrapper{
+    background: none repeat scroll 0 0 transparent;
+    border: none;
+}
+.galleryformatter-greenarrows .gallery-thumbs ul{
+    float: right;
+}
+.galleryformatter-greenarrows .gallery-thumbs li{
+    margin: 7px 0 7px 7px;
+    padding: 0;
+    line-height: 1.4;
+}
+.galleryformatter-greenarrows .gallery-thumbs li a{
+    background: url("/sites/all/themes/dann/images/generales/slider-circle-off.jpg") no-repeat;
+    display: inline;
+    padding: 0;
+}
+.galleryformatter-greenarrows .gallery-thumbs li.active a, .galleryformatter-greenarrows .gallery-thumbs li a:hover{
+    background: url("/sites/all/themes/dann/images/generales/slider-circle-on.jpg") no-repeat;
+    display: inline;
+}
+.galleryformatter-greenarrows .gallery-thumbs li img {
+    border: 0 none;
+    visibility: hidden;
+}
+.galleryformatter-greenarrows .slide-button{
+    height: 44px;
+    width: 44px;
+    opacity: 0.3;
+}
+.galleryformatter-greenarrows .slide-button:hover{
+    opacity: 0.7;
+}
+.galleryformatter-greenarrows .prev-slide.slide-button{
+    background: url("/sites/all/themes/dann/images/generales/icono-previous-slide.png") no-repeat;
+    margin-left: 1.8em;
+}
+.galleryformatter-greenarrows .next-slide.slide-button{
+    background: url("/sites/all/themes/dann/images/generales/icono-next-slide.png") no-repeat;
+    margin-right: 1.8em;
+}
+
+/*---------- Booking Form Styles -----------*/
+#booking-form {
+    display: block;
+    width: 13.8em;
+    height: 8em;
+    padding: 2em;
+    background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/fondo-booking-interno.png");
+    overflow: hidden;
+    float: left;
+}
+.node-type-hotel #booking-form{
+    position: absolute;
+    left: 2.1875em;
+    bottom: 0em;
+    z-index: 500;
+}
+.page-home .view-id-pagina_de_inicio .view-mode-full{position: relative;}
+.page-home #booking-form {
+    position: absolute;
+    left: 2.1875em;
+    bottom: 0em;
+    z-index: 495;
+    height: 11em;
+    background-repeat: repeat;
+}
+#booking-form fieldset{
+    margin: 0;
+    padding: 0;
+}
+#booking-form .accesibility {display: none;}
+#booking-form .wrapper{
+    display: block;
+    margin: 0em 0.5em 1.2em 0em;
+    overflow: hidden;
+    font-size: 0.8em;
+    float: left;
+}
+#booking-form .wrapper label{
+    display: block;
+    margin: 0em 0em 0.1em 0em;
+    color: white;
+    font-weight: normal;
+}
+#booking-form .wrapper input{
+    padding: 0.4em 0.4em 0.3em 0.4em;
+    border: none;
+    border-radius: 3px;
+    height: 1.5em;
+}
+#booking-form select{
+    padding: 0.4em 0.4em 0.3em 0.4em;
+    border: none;
+    border-radius: 3px;
+    height: 2.2em;
+    margin: 0;
+    width: 4.5em;
+}
+#booking-form fieldset>select{
+    width:200px;
+    margin: 0 1.5em 1.2em 0;
+}
+#booking-form .wrapper.calendar{
+    width: 60%;
+}
+#booking-form .wrapper.calendar input{
+    width: 9em;
+}
+#booking-form .wrapper.nights, .node-type-hotel #booking-form .wrapper.childs{
+    margin-right: 0;
+}
+#booking-form .submit, .field.field-name-boton-booking.field-type-ds.field-label-hidden a {
+    background-image: linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -o-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -moz-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -webkit-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -ms-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #FF6600),
+    color-stop(1, #FF9900)
+    );
+    background-color: #FF6600;
+    border: 0.0625em solid #FF9900;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #333333;
+    clear: both;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    padding: 0.3em 0.5em;
+    text-align: center;
+    width: 14em; /*-- 170px --*/
+    font: inherit;
+    text-shadow: none;
+}
+.field.field-name-boton-booking.field-type-ds.field-label-hidden a {
+	width: 9em;
+	margin: 0 auto;
+	}
+
+
+#ui-datepicker-div { font-size: 65% !important; }
+
+/* --Contenido-- */
+
+.group-right .group-content-top, .group-right .group-content-center{
+    overflow: hidden;
+    display: block;
+    padding: 0em 1.875em 3em 2.5em;
+    background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/icono-organico.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin: 0em 0em 3em 0em;
+}
+
+.group-right .group-content-top .field, .group-right .group-content-center .field, .group-right .group-content-center .field-group-div{
+    float: left;
+}
+/*Servicios y comodidades*/
+.group-right .group-content-top .field-name-field-text-summary-services{
+    margin: 0 3.125em 0 0;
+    width: 14.375em;
+}
+.group-right .group-content-top .field-name-field-text-summary-services h2{
+    font-size: 1.1em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.group-right .group-content-top .field-name-field-text-summary-services ul{
+    margin: 0em 1em 0em 0em;
+}
+.group-right .group-content-top .field-name-field-text-summary-services ul li{
+    font-size: 0.8em;
+    padding: 0em 0em 0em 1.6em;
+    margin: 0em 0em 0.2em 0em;
+    background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/icono-li.gif");
+    background-position: 0em 0.1em;
+    background-repeat: no-repeat;
+}
+.group-right .group-content-top .field-name-field-text-summary-services p{
+    margin-top: 3em;
+    text-indent: 2em;
+}
+
+/*Body*/
+.group-right .group-content-top .field-name-body{
+    margin: 0 3.125em 0 0;
+    width: 19.375em;
+}
+.group-right .group-content-top .field-name-body h2{
+    font-size: 1.5em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.group-right .group-content-top .field-name-body p{
+    margin: 0em 0em 1em 0em;
+}
+/*Tarifa*/
+.group-right .group-content-top .group-tarifa{
+    background-color: #386189;
+    border-radius: 7px 7px 7px 7px;
+    padding: 1.5em 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px #333333;
+    width: 15em;
+    float: left;
+	color:#FFF;
+	margin-bottom: 1em;
+}
+.group-right .group-content-top .group-tarifa h2{
+    color: white;
+    font-size: 1.25em;
+    padding: 0em 0em 0.9em 0em;
+}
+.group-right .group-content-top .group-tarifa .field{
+    float: none;
+}
+.group-right .group-content-top .group-tarifa .field-name-field-min-price{
+    color: #FFFFFF;
+    font-size: 2.25em;
+    margin: 0 0 0.1em;
+}
+.group-right .group-content-top .group-tarifa .field-name-field-select-money{
+    color: #FFFFFF;
+    font-size: 0.8em;
+    margin: 0 0 1.5em;
+}
+
+.group-right .group-content-top .group-tarifa .field-name-field-select-desayuno{
+    color: #FFFFFF;
+    font-size: 1.2em;
+    margin: 0 0 1em;
+}
+.group-right .group-content-top .group-tarifa .field-name-boton-booking a.disponibilidad{
+    display: block;
+    clear: both;
+    margin: 0em 2em;
+    border-radius: 7px;
+    background-image: linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -o-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -moz-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -webkit-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -ms-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #FF6600),
+    color-stop(1, #FF9900)
+    );
+    background-color: #FF6600;
+    border: 0.0625em solid #FF9900;
+	color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.7em 0.5em;
+    -moz-box-shadow: 1px 1px 1px #333;
+    -webkit-box-shadow: 1px 1px 1px #333;
+    box-shadow: 1px 1px 1px #333;
+    cursor: pointer;
+}
+.group-right .group-content-top .group-tarifa .field-name-boton-booking a.disponibilidad:hover {
+	text-decoration: none;
+}
+/*Planes*/
+.group-right .group-content-center .field-name-view-plan{
+    width: 14.375em;
+    margin: 0em 3.125em 0em 0em;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #DAE4EF;
+    padding: 1em 0;    
+}
+
+.group-right .group-content-center .field-name-view-plan h2{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 1.9em;
+    line-height: 110%;
+}
+.group-right .group-content-center .field-name-view-plan .views-row{
+    margin: 0em 0em 1em 2.5em;
+}
+
+.group-right .group-content-center .field-name-view-plan .views-row a{
+    display: block;
+    font-size: 0.8em;
+}
+.group-right .group-content-center .field-name-view-plan .views-row .views-field-field-image-miniature a{
+    margin: 0em 0em 0.5em 0em;
+}
+/*Ubicación*/
+.group-right .group-content-center .group-content-left{
+    width: 19.375em;
+    margin: 0em 3.125em 0em 0em;
+}
+.group-right .group-content-center .group-content-left h2{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.group-right .group-content-center .group-content-left p, address{
+	font-size: 0.75em;
+}
+
+.group-right .group-content-center .group-content-left .field-name-clone-direccion{
+    margin: 0.4em 0em 0.2em 0em;
+}
+/*Lugares cercanos*/
+.group-right .group-content-center .group-content-right{
+    width: 15em;
+}
+.group-right .group-content-center .group-content-right h2{
+    font-size: 1.25em;
+    padding: 0em 0em 0.9em 0em;
+}
+.group-right .group-content-center .group-content-right ul{
+    margin: 0em 1em 1em 0em;
+}
+.group-right .group-content-center .group-content-right ul li{
+    font-size: 0.8em;
+    padding: 0em 0em 0em 1.6em;
+    margin: 0em 0em 0.2em 0em;
+    background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/icono-li.gif");
+    background-position: 0em 0.1em;
+    background-repeat: no-repeat;
+}
+/*Eventos*/
+.group-right .group-content-bottom{
+    overflow: hidden;
+    display: block;
+    padding: 0em 2em 1.5em 2.2em;
+    margin-bottom: 3em;
+}
+.group-right .group-content-bottom .field-name-view-room {
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    width: 39.375em;
+    height: 15.625em;
+    position: relative;
+    float: left;
+}
+.node-type-hotel .jcarousel-skin-default .jcarousel-container-horizontal {
+    width: 39.375em;
+    height: 15.625em;
+}
+.node-type-hotel .jcarousel-skin-tango .jcarousel-prev-horizontal{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 3.125em;
+    height: 100%;
+    background-color: #5587B9;
+    background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/triangulo-blanco-atras.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.node-type-hotel .jcarousel-skin-tango .jcarousel-next-horizontal{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 580px;
+    float: left;
+    width: 3.125em;
+    height: 100%;
+    background-color: #5587B9;
+    background-image: url("/sites/all/themes/dann/images/h-inicio-hotel/triangulo-blanco-adelante.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.node-type-hotel .jcarousel-skin-tango .jcarousel-item, .node-type-hotel .jcarousel-skin-tango .jcarousel-container-horizontal{
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+}
+.node-type-hotel li.j.jcarousel-item.jcarousel-item-horizontal{
+    width: 530px !important;
+    margin: 0 50px;
+}
+.node-type-hotel .jcarousel-skin-tango .jcarousel-clip-horizontal{
+    width: auto;
+}
+.node-type-hotel .jcarousel-skin-tango .jcarousel-clip-horizontal>ul, .node-type-hotel .views-field-field-image-banner .field-content{
+    height: 250px;
+}
+.group-right .group-content-bottom .group-content-bottom-right{
+    width: 14em;
+    float: left;
+    margin: 0em 0em 0em 1.5em;
+}
+.group-right .group-content-bottom .group-content-bottom-right .field-name-clone-title{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.group-right .group-content-bottom .group-content-bottom-right p{
+    font-size: 0.875em;
+    margin: 0em 0em 1em 0em;
+}
+.group-right .group-content-bottom .group-content-bottom-right a{
+    display: block;
+    clear: both;
+    margin: 0em;
+    border-radius: 7px;
+    border: 0.0625em solid #CB6133;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(203,97,51)), color-stop(1, rgb(216,141,47)));
+    background-image: -moz-linear-gradient( center bottom, rgb(203,97,51) 0%, rgb(216,141,47) 100%);
+    color: white;
+    background-color: #CB6133;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+}
+
+/** Página interna Hoteles - End **/
+
+
+/** Página Conoce el Hotel (h1) - Start **/
+
+/*******.page-conoce .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+}*******/
+.page-conoce .view-conoce-el-hotel h2{
+    font-size: 2.5em;
+    margin: 0.8em 0em 1em 0.85em;
+    line-height: 110%;
+}
+.page-conoce .view-conoce-el-hotel .group-content-top{
+    overflow: hidden;
+    display: block;
+    padding: 0em 2em 3em 2.2em;
+}
+.page-conoce .view-conoce-el-hotel .field-name-field-image-gallery{
+    float: left;
+    width: 35em;
+    margin: 0em 0em 0em 2em;
+}
+.page-conoce .view-conoce-el-hotel .field-name-field-image-gallery img{
+    float: left;
+    margin: 0em 0.3em 0.3em 0em;
+}
+.page-conoce .view-conoce-el-hotel .group_contact_info{
+    display: block;
+    padding: 0em 0em 1.5em 3em;
+    background-image: url("/sites/all/themes/dann/images/h1-conozca-el-hotel/icono-brujula.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 24.5em;
+    float: left;
+    margin: 0em 0em 0em 2.1em;
+}
+.page-conoce .view-conoce-el-hotel .group_contact_info a{
+    font-size: 0.8em;
+}
+.page-conoce .view-conoce-el-hotel .field-name-boton-360{
+    width: 21.875em;
+    float: left;
+    margin: 0em 0em 0em 3em;
+}
+.page-conoce .view-conoce-el-hotel #tour-virtual{
+    display: block;
+    margin: 0em 0em 1.5em 0em;
+    overflow: hidden;
+}
+.page-conoce .view-conoce-el-hotel #tour-virtual .contenido {
+    border-radius: 7px;
+    background-color: #5587B9;
+    padding: 1em;
+    width: 15em;
+    float: left;
+    margin: 0em 0.4em 0em 0em;
+}
+.page-conoce .view-conoce-el-hotel #tour-virtual h3 {
+    font-size: 1.25em;
+    margin: 0em 0em 0.1em 0em;
+}
+.page-conoce .view-conoce-el-hotel #tour-virtual p {
+    font-size: 0.8em;
+    line-height: 120%;
+    color: white;
+}
+.page-conoce .view-conoce-el-hotel #tour-virtual a{
+    color: white;
+}
+.page-conoce .view-conoce-el-hotel #tour-virtual>a{
+    border-radius: 50px;
+    background-color: #C00;
+    padding: 1em;
+    display: block;
+    width: 2em;
+    height: 2em;
+    float: left;
+    text-align: center;
+	line-height: 200%;
+	margin-top: 0.5em;
+}
+#zone-pre-content-bottom aside{
+    background-color: #FFFFFF;
+}
+#zone-pre-content-bottom aside.region-sidebar-first{
+    padding-right: 5px;
+    margin-right: 0;
+}
+#zone-pre-content-bottom aside.region-sidebar-second{
+    padding-left: 45px;
+    margin-left: 0;
+}
+
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-1{
+    display: block;
+    padding: 0em 0em 1.5em 0em;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-2{
+    display: block;
+    margin: 0em 0em 1.5em 0em;
+    border-radius: 7px;
+    background-color: #E7EDF4;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-2 h2{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-2 img{
+    float: left;
+    margin: 0em 1em 0em 0em;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-2 h3{
+    font-size: 0.9em;
+    margin: 0em 0em 0.3em 0em;
+    float: left;
+    width: 15em;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-2 div.body{
+    float: left;
+    width: 15em;
+    line-height: 120%;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-2 ul{
+    width: 11em;
+    float: left;
+    margin: 0.5em 0.5em 0.5em 0em;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-2 ul li{
+    font-size: 0.8em;
+    padding: 0em 0em 0em 1.3em;
+    margin: 0em 0em 0.2em 0em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+    background-position: 0em 0.1em;
+    background-repeat: no-repeat;
+}
+
+
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-3{
+    display: block;
+    margin: 0em 0em 1.5em 0em;
+    overflow: hidden;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-3 h2{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-3 ul li{
+    float: left;
+    width: 8.875em;
+    margin: 0em 2.5em 0em 0em;
+    text-align: center;
+    font-size: 0.8em;
+}
+.region-sidebar-first-inner #block-views-conoce-el-hotel-block-3 ul li img{
+    margin: 0em 0em 0.5em 0em;
+}
+
+
+#zone-pre-content-bottom .region-sidebar-second-inner section{
+    display: block;
+    margin: 0em 0em 1.5em 0em;
+    overflow: hidden;
+}
+#zone-pre-content-bottom .region-sidebar-second-inner section h2.block-title{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.region-sidebar-second-inner .view-conoce-el-hotel .view-content{
+    padding: 0 4em 0 0;
+}
+.region-sidebar-second-inner .view-conoce-el-hotel .views-row{
+    display: block;
+    overflow: hidden;
+    margin: 0em 0em 3em 0em;
+}
+.region-sidebar-second-inner .view-conoce-el-hotel .views-row img{
+    float: left;
+    margin: 0em 1em 1em 0em;
+}
+.region-sidebar-second-inner .view-conoce-el-hotel .views-row h2{
+    display: block;
+    color: #0086CC;
+    margin: 0em 0em 0.3em 0em;
+    font-size: 1.1em;
+    width: 13em;
+    float: left;
+}
+.region-sidebar-second-inner .view-conoce-el-hotel .views-row div.body{
+    width: 15em;
+    float: left;
+}
+.region-sidebar-second-inner .view-conoce-el-hotel .views-row p{
+    font-size: 0.8em;
+    line-height: 130%;
+}
+
+/** Página Conoce el Hotel (h1) - End **/
+
+
+/** Página Explore los alrededores (h2) - Start **/
+
+/*******.page-explore .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+}*******/
+.page-explore .view-explore-alrededores .view-content h2{
+    font-size: 2.5em;
+    margin: 0.8em 0em 0.8em 0.9em;
+    display: block;
+}
+.page-explore .view-explore-alrededores .view-content div.description{
+    display: block;
+    margin: 0em 0em 2em 2.5em;
+    overflow: hidden;
+}
+
+.page-explore .view-explore-alrededores .view-content div.description p{
+    width: 33em;
+    float: left;
+    margin: 0em 10em 0em 0em;
+    padding: 0.5em 0em;
+}
+.page-explore .view-explore-alrededores .view-content div.mapa{
+    float: left;
+    width: 36.875em;
+    margin: 0em 4em 2em 2.5em;
+    overflow: hidden;
+}
+.page-explore .view-explore-alrededores .view-content div.a-donde-ir{
+    float: left;
+    width: 11.875em;
+    margin: 0em 0em 2em 0em;
+    overflow: hidden;
+}
+.page-explore .view-explore-alrededores .view-content div.a-donde-ir h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.page-explore .view-explore-alrededores .view-content div.a-donde-ir ul li{
+    font-size: 0.8em;
+    margin: 0em 0em 0.5em 0em;
+    line-height: 110%;
+}
+
+/** Página Explore los alrededores (h2) - End **/
+
+/** Página Explore los alrededores (h2) - Start **/
+
+/*******.page-explore .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+}*******/
+#block-system-main .view-explore-alrededores.view-display-id-page_1 .view-content h2{
+    font-size: 2.5em;
+    margin: 0.8em 0em 0.8em 0.9em;
+    display: block;
+}
+#block-system-main .view-explore-alrededores.view-display-id-page_1 .view-content div.description{
+    display: block;
+    margin: 0em 0em 2em 2.5em;
+    overflow: hidden;
+}
+
+#block-system-main .view-explore-alrededores.view-display-id-page_1 .view-content div.description p{
+    width: 33em;
+    float: left;
+    margin: 0em 10em 0em 0em;
+    padding: 0.5em 0em;
+}
+#block-views-explore-alrededores-block-2{
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    padding: 0 4em 2em 2.5em;
+    width: 36.88em;
+    overflow: hidden;
+}
+#block-views-explore-alrededores-block-1{
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    padding: 0 0 2em;
+    width: 15em;
+    padding-top:2em;
+    overflow: hidden;
+}
+#block-views-explore-alrededores-block-1 h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.page-explore2 #region-content{
+	background:white;
+}
+.page-explore .view-explore-alrededores .view-content div.a-donde-ir ul li{
+    font-size: 0.8em;
+    margin: 0em 0em 0.5em 0em;
+    line-height: 110%;
+}
+
+/** Página Explore los alrededores (h2) - End **/
+
+/** Página Organice eventos (h3) - Start **/
+
+/*******.page-eventos .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+}*******/
+.page-eventos .region-content .block-system-main .view-header h2, .view.view-planes-ofertas.view-id-planes_ofertas.view-display-id-page.view-dom-id-1.views-processed h1{
+    font-size: 2.5em;
+    margin: 0.8em 0em 0.8em 0.9em;
+    display: block;
+}
+
+.view-header strong, .description span {
+	text-transform: capitalize;
+	}
+
+.page-eventos .region-content .block-system-main .view-content{
+    display: block;
+    margin: 0em 0em 2em 2.5em;
+    overflow: hidden;
+}
+.page-eventos .region-content .block-system-main .view-content .resumen-eventos{
+    width: 27em;
+    float: left;
+    clear: both;
+}
+.page-eventos .region-content .block-system-main .view-content .resumen-eventos>p{
+    
+    line-height: 120%;
+    margin: 0em 0em 1.5em 0em;
+}
+.page-eventos .region-content .block-system-main .view-content .contacto a{
+    width: 14em;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 7px;
+    border: 0.0625em solid #F90;
+    background-image: linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -o-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -moz-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -webkit-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -ms-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #FF9900), color-stop(1, #FF6600) );
+    margin: 0em 0em 0.5em 0em;
+    background-color: #FF6600;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    overflow: hidden;
+    display: block;
+}
+.page-eventos .region-content .block-system-main .view-content .contacto p{
+    clear: both;
+    display: block;
+    font-size: 0.8em;
+}
+.page-eventos .region-content .block-system-main .view-content .contacto span{
+    display: block;
+    font-size: 1.5em;
+    margin: 0.2em 0em 0em 0em;
+}
+.page-eventos .region-content .block-system-main .view-content .cinco-razones{
+    width: 19.375em;
+    float: left;
+    padding: 0.5em 0.5em;
+    background-color: #EDF3F3;
+    border-radius: 7px;
+    margin: 0em 0em 0em 2.5em;
+}
+.page-eventos .region-content .block-system-main .view-content .cinco-razones p{
+    font-size: 1em;
+    line-height: 120%;
+    margin: 0em 0em 1.5em 0em;
+}
+.page-eventos .region-content .block-system-main .view-content .cinco-razones ol{
+    font-size: 1em;
+    line-height: 120%;
+    margin: 0em 0em 0em 1em;
+}
+.page-eventos .region-content .block-system-main .view-content .cinco-razones ol li{
+    padding: 0em 0em 0em 1.3em;
+    margin: 0em 0em 0.5em 0em;
+    font-size: 0.8em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-li-verde.png");
+    background-position: 0em 0.25em;
+    background-repeat: no-repeat;
+}
+
+/*Tabs*/
+    #salones .ui-widget-content,
+    #salones .ui-widget-header,
+    #salones .ui-state-active,
+    #salones .ui-widget-content .ui-state-active,
+    #salones .ui-widget-header .ui-state-active,
+    #salones .ui-state-default,
+    #salones .ui-widget-content .ui-state-default,
+    #salones .ui-widget-header .ui-state-default{
+    border: none;
+    background-image: none;
+}
+#salones .ui-widget-header{
+    background: #FFFFFF;
+}
+#salones .ui-widget{
+    font-family: "Tenor Sans", Arial, Helvetica;
+    font-size: 1em;
+}
+#salones .ui-tabs .ui-tabs-nav{
+    padding: 0;
+}
+#salones .ui-widget-header .ui-state-default.ui-state-active{
+    background-color: #DAE4EF;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.1, #DAE4EF), color-stop(1.0, #DAE4EF));
+    background-image: -moz-linear-gradient( center bottom, #DAE4EF 10%, #DAE4EF 100%);
+}
+#salones .ui-state-default a{
+    color: #FFFFFF;
+    font-size: 0.9em;
+    padding: 0.5em 2em;
+}
+#salones .ui-tabs-selected.ui-state-active a{
+    color: #000000;
+}
+#salones .ui-widget-header .ui-state-default{
+    margin: 0em 0.5em 0em 0em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.1, rgb(63,102,138)), color-stop(1.0, rgb(82,127,173)));
+    background-image: -moz-linear-gradient( center bottom, rgb(63,102,138) 10%, rgb(82,127,173) 100%);
+    background-color: rgb(63,102,138);
+}
+#salones .ui-tabs-panel.ui-widget-content.ui-corner-bottom{
+    display: block;
+    clear: both;
+    background-color: #DAE4EF;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 1.2em 1em 1em 1em;
+    overflow: hidden;
+}
+#salones #fotografias .ui-tabs-panel.ui-widget-content.ui-corner-bottom{
+    border-top-left-radius: 7px;
+}
+#salones h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+#salones .salon-eventos{
+    display: block;
+    overflow: hidden;
+    width: 55em;
+    margin: 0em 0em 2em 1em;
+    position: relative;
+    padding: 0em 1em;
+    background-image: url("/sites/all/themes/dann/images/generales/fondo-contenido-interno-pestanas.png");
+    background-position: 0em 5em;
+    background-repeat: no-repeat;
+}
+#salones .view-content{
+    float: left;
+    margin: 0;
+}
+#salones .view-content .imagen-salon{
+    width: 18.75em;
+    margin: 0em 2em 0em 0em;
+    text-align: center;
+    float: left;
+}
+#salones #caracteristicas .views-row{
+    float: left;
+}
+#salones #caracteristicas .view-content ul{
+    float: left;
+    width: 55%;
+}
+#salones #caracteristicas .view-content ul li{
+    font-size: 0.85em;
+    padding: 0em 0em 0em 1.4em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+    background-position: 0em 0.1em;
+    background-repeat: no-repeat;
+    margin: 0em 0em 0.3em 0em;
+    display: block;
+    width: 45%;
+    float: left;
+}
+
+#salones .jcarousel-skin-default .jcarousel-prev-horizontal, #salones .jcarousel-skin-default .jcarousel-prev{
+    background-image: url("/sites/all/themes/dann/images/generales/icono-previous-slide.png");
+    height: 42px;
+    width: 42px;
+    top: 85px;
+    left: -3px;
+    background-position: bottom left;
+    opacity: 0.7;
+}
+#salones .jcarousel-skin-default .jcarousel-prev:hover{
+    background-position: bottom left;
+    opacity: 1;
+}
+#salones .jcarousel-skin-default .jcarousel-next-horizontal, #salones .jcarousel-skin-default .jcarousel-next{
+    background-image: url("/sites/all/themes/dann/images/generales/icono-next-slide.png");
+    height: 42px;
+    width: 42px;
+    top: 85px;
+    right: -3px;
+    background-position: bottom right;
+    opacity: 0.7;
+}
+#salones .jcarousel-skin-default .jcarousel-next:hover{
+    background-position: bottom right;
+    opacity: 1;
+}
+
+#salones #fotografias .jcarousel-container.jcarousel-container-horizontal{
+    width: 48em;
+    height: 175px;
+}
+#salones #fotografias .jcarousel-clip.jcarousel-clip-horizontal{
+    width: 48em;
+}
+#salones #fotografias .jcarousel-clip.jcarousel-clip-horizontal ul{
+    height: 175px;
+    min-width: 20000px;
+}
+#salones #fotografias .jcarousel-item{
+    min-width: 300px;
+    max-width: 300px;
+    height: 175px;
+}
+
+/** Página Organice eventos (h3) - End **/
+
+
+/** Página Planes y ofertas (h4) - Start **/
+
+/*******.page-planes .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+}*******/
+.page-planes .view-planes-ofertas .view-header h2{
+    font-size: 2.5em;
+    margin: 0.8em 0em 0.8em 0.9em;
+    display: block;
+}
+.page-planes .view-planes-ofertas .view-header div.description{
+    display: block;
+    margin: 0em 0em 2em 2.5em;
+    overflow: hidden;
+}
+
+.page-planes .view-planes-ofertas .view-header div.description p{
+    width: 33em;
+    float: left;
+    margin: 0em 10em 0em 0em;
+    padding: 0.5em 0em;
+}
+.page-planes .view-planes-ofertas .views-row{
+    overflow: hidden;
+    display: block;
+    padding: 0em 2em 1em 2.2em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-organico.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin: 0em 0em 2.5em 0em;
+}
+.page-planes .view-planes-ofertas .views-row h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.page-planes .view-planes-ofertas .views-row .imagen-banner{
+    width: 27em;
+    float: left;
+    text-align: right;
+}
+.page-planes .view-planes-ofertas .views-row .imagen-banner img{
+    margin-bottom: 1em;
+}
+.page-planes .view-planes-ofertas .views-row .imagen-banner a.disponibilidad{
+    border-radius: 7px;
+    border: 0.0625em solid #F90;
+    background-image: linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -o-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -moz-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -webkit-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -ms-linear-gradient(bottom, #FF9900 0%, #FF6600 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #FF9900), color-stop(1, #FF6600) );
+    background-color: #FF6600;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0.7em 2em;
+    box-shadow: 2px 2px 2px #333;
+    cursor: pointer;
+}
+.page-planes .view-planes-ofertas .views-row div.field-content, .page-planes .view-planes-ofertas .views-row div.body{
+    width: 24em;
+    float: right;
+}
+.page-planes .view-planes-ofertas .views-row p{
+    font-size: 0.9em;
+    line-height: 140%;
+    display: block;
+    margin: 0em 0em 0.5em 0em;
+}
+.page-planes .view-planes-ofertas .views-row ul{
+    display: block;
+    overflow: hidden;
+    margin: 0em 0em 1em 0em;
+}
+.page-planes .view-planes-ofertas .views-row ul li{
+    padding: 0em 0em 0em 1.3em;
+    margin: 0em 0em 0.3em 0em;
+    font-size: 0.9em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+    background-position: 0em 0.25em;
+    background-repeat: no-repeat;
+}
+/** Página Planes y ofertas (h4) - End **/
+
+
+/** Página interna Habitación - Start **/
+
+.node-rooms .group-right h2{
+    display: block;
+    font-size: 2.5em;
+    margin: 0.8em 0 0.8em 0.9em;
+}
+.node-rooms .group-content-center .field-name-body{
+    margin: 0 2em 0 0;
+    width: 19.375em;
+}
+.node-rooms .group-content-center .field-name-body p{
+    font-size: 0.875em;
+    line-height: 135%;
+    margin: 0 0 1em;
+}
+.node-rooms .group-content-center .field-name-field-text-summary{
+    width: 16.875em;
+    margin: 0em 2em 0em 0em;
+}
+.node-rooms .group-content-center .field-name-field-text-summary h3{
+    font-size: 1.25em;
+    line-height: 110%;
+    margin: 0 0 1em;
+}
+.node-rooms .group-content-center .field-name-field-text-summary ul{
+    margin: 0em 1em 1em 1.5em;
+}
+.node-rooms .group-content-center .field-name-field-text-summary ul li{
+    font-size: 0.8em;
+    padding: 0em 0em 0em 1.3em;
+    margin: 0em 0em 0.2em 0em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+    background-position: 0em 0.1em;
+    background-repeat: no-repeat;
+}
+
+.node-rooms .group-content-center .field-name-field-image-miniature{
+    width: 9.375em;
+}
+.node-rooms .group-content-center .field-name-field-image-miniature h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.node-rooms .group-right .field-name-field-text-travel-text{
+    width: 54.375em;
+    margin: 0em 0em 2em 2.5em;
+    padding: 0em 0em 2em 0em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-organico.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.node-rooms .group-right .field-name-field-text-travel-text h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1.5em 1.9em;
+    line-height: 110%;
+    color: #386088;
+    text-align: center;
+}
+.node-rooms .group-right .field-name-field-text-travel-text h3 span{
+    color: white;
+    background-image: url("/sites/all/themes/dann/images/generales/punto-rojo.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 1em 0.3em;
+}
+.node-rooms .group-right .group_other_rooms{
+    width: 100%;
+    margin: 0em 0em 1em 2.5em;
+    padding: 0em 0em 1em 0em;
+    overflow: hidden;
+}
+.node-rooms .group-right .group_other_rooms h3{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.node-rooms .group-right .field-name-view-rooms .node-rooms.view-mode-custon{
+    width: 11.875em;
+    float: left;
+    margin: 0em 2em 1em 0em;
+}
+
+
+/** Página interna Habitación - End **/
+
+/** Página tour 360 - Start **/
+
+/*******.page-360-tour .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+    padding: 0 0 2em 0;
+}*******/
+.view-page-tour h2{
+    font-size: 2.5em;
+    margin: 0.8em 0em 1em 0.85em;
+    line-height: 110%;
+}
+
+.view-page-tour div.description{
+    display: block;
+    margin: 0em 0em 2em 2.5em;
+    overflow: hidden;
+}
+.view-page-tour div.description span{
+    color: white;
+    background-image: url("/sites/all/themes/dann/images/generales/punto-rojo.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 1.2em 1em;
+    float: left;
+}
+.view-page-tour div.description p{
+    width: 33em;
+    float: left;
+    margin: 0em 2em 0em 0em;
+    padding: 0.5em 0em;
+}
+.view-page-tour .view-content{
+    margin: 0em 0em 2em 0em;
+}
+.view-page-tour .view-content li.views-row{
+    float: left;
+    margin: 0em 2.5em 1em 2.5em;
+    overflow: hidden;
+    display: block;
+}
+
+
+/** Página tour 360 - End **/
+
+
+/** Página tour virtual desplegado - Start **/
+
+.group-right .field-name-field-embed-360{
+    width: 58.75em;
+    margin: 0em 0.3125em 2em 0.3125em;
+}
+
+.group-right .field-name-title h2{
+    font-size: 2.5em;
+    margin: 0.8em 0em 0.8em 0.9em;
+    display: block;
+}
+.node-type-360-photograph .group-right .field-name-body{
+    display: block;
+    margin: 0em 0em 2em 2.5em;
+    padding: 0em 0em 1.5em 0em;
+    overflow: hidden;
+	width:45%;
+	float:left;
+}
+.node-type-360-photograph .group-right .field-name-body p{
+    width: 33em;
+    float: left;
+    margin: 0em 10em 0em 0em;
+    padding: 0.5em 0em;
+}
+.node-type-360-photograph .group-right .field-name-vista-360-interna{
+    overflow: hidden;
+    display: block;
+    padding: 0em 2em 1em 2.2em;
+    background-image: url("/sites/all/themes/dann/images/generales/icono-organico.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin: 0em 0em 1em 0em;
+	clear:both;
+}
+
+.node-type-360-photograph .fb-like.fb_edge_widget_with_comment.fb_iframe_widget {
+	float:right;
+	width:48%;
+	}
+
+.node-type-360-photograph .group-right #block-custom-dann-view-360 h2{
+    font-size: 1.25em;
+    margin: 0em 0em 1em 0em;
+    line-height: 110%;
+}
+.node-type-360-photograph .group-right #block-custom-dann-view-360  div.node{
+    float: left;
+    width: 8.375em;
+    margin: 0em 2.5em 1em 0em;
+    overflow: hidden;
+    line-height: 1;
+}
+.node-type-360-photograph .group-right #block-custom-dann-view-360  div.node .field-name-title{
+    height: 3em;
+}
+.node-type-360-photograph .group-right #block-custom-dann-view-360  div.node img{
+    display: block;
+    margin: 0em 0em 0.5em 0em;
+}
+.node-type-360-photograph .group-right #block-custom-dann-view-360  div.node a{
+    font-size: 0.75em;
+}
+
+/** Página tour virtual desplegado - End **/
+
+/** Página básica y Página de busqueda **/
+
+/*******.page-search-node .region-content .block-system-main, .node-type-page .region-content .block-system-main{
+    display: block;
+    overflow: hidden;
+    margin: 0em;
+    background-color: white;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+    padding: 0 0 2em 0;    
+}*******/
+
+/** Reservas y Newsletter - PreFooter - Start**/
+
+#region-postcontent-left{
+    padding-right: 5px;
+    margin-right: 0;
+    background-image: linear-gradient(right, #5587B9 0%, #FFFFFF 60%);
+    background-image: -o-linear-gradient(right, #5587B9 0%, #FFFFFF 60%);
+    background-image: -moz-linear-gradient(right, #5587B9 0%, #FFFFFF 60%);
+    background-image: -webkit-linear-gradient(right, #5587B9 0%, #FFFFFF 60%);
+    background-image: -ms-linear-gradient(right, #5587B9 0%, #FFFFFF 60%);
+    background-image: -webkit-gradient( linear, right bottom, left top, color-stop(0.6, #5587B9), color-stop(0.6, #FFFFFF) );
+    background-color: #5587B9;
+}
+.region-postcontent-left-inner{
+    background-color: #5587B9;
+    border-top-left-radius: 10px;
+}
+#region-postcontent-right{
+    padding-left: 5px;
+    margin-left: 0;
+    background-image: linear-gradient(right, #FFFFFF 0%, #FFFFFF 60%);
+    background-image: -o-linear-gradient(right, #FFFFFF 0%, #3C73AD 60%);
+    background-image: -moz-linear-gradient(right, #FFFFFF 0%, #3C73AD 60%);
+    background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #3C73AD 60%);
+    background-image: -ms-linear-gradient(right, #FFFFFF 0%, #3C73AD 60%);
+    background-image: -webkit-gradient( linear, right bottom, left top, color-stop(0, #FFFFFF), color-stop(0.6, #3C73AD) );;
+}
+.region-postcontent-right-inner{
+    background-color: #3C73AD;
+    border-top-right-radius: 10px;
+}
+.region-postcontent-left-inner #reservas{
+    display: block;
+    overflow: hidden;
+    height: 6em;
+}
+.region-postcontent-left-inner #reservas p.telefono{
+	background-image: url("/sites/all/themes/dann/images/generales/icono-telefono.gif");
+    background-position: 0.9em 0.9em;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 0.95em;
+    font-weight: normal;
+    padding: 1em 0 1em 3em;
+    text-shadow: 1px 1px 1px black;
+}
+.region-postcontent-left-inner #reservas p.telefono span{
+    padding: 0em 0em 0em 1.5em;
+    background-image: url("/sites/all/themes/dann/images/generales/flag-colombia-2.png");
+    background-position: 0em 0.05em;
+    background-repeat: no-repeat;
+}
+.region-postcontent-left-inner #reservas ul{
+    display: block;
+    margin: 0 0 0 2.5em;
+}
+.region-postcontent-left-inner #reservas ul li{
+    float: left;
+    margin: 0 0.5em 0 0;
+}
+.region-postcontent-right-inner #suscripcion{
+    display: block;
+    overflow: hidden;
+    height: 6em;
+}
+.region-postcontent-right-inner #suscripcion p{
+    font-size: 0.9em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 1em 0.5em 0.5em 1em;
+    display: block;
+}
+.region-postcontent-right-inner #suscripcion #form-suscripcion {
+    margin: 0.5em 0.5em 0.5em 1em;
+}
+.region-postcontent-right-inner #suscripcion #form-suscripcion div.division {
+    float: left;
+    margin: 0em 1em 0em 0em; 
+}
+.region-postcontent-right-inner #suscripcion #form-suscripcion input#submit {
+    display: block;
+    margin: 0em;
+    border-radius: 7px;
+    background-image: linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -o-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -moz-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -webkit-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -ms-linear-gradient(bottom, #FF6600 0%, #FF9900 100%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #FF6600),
+    color-stop(1, #FF9900)
+    );
+    background-color: #FF6600;
+    border: 0.0625em solid #FF9900;
+	color: white;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0.3em 0.9em;
+    cursor: pointer;
+    float: left;
+    text-shadow: none;
+	text-shadow: 1px 1px 1px black;
+}
+/** Reservas y Newsletter - PreFooter - End**/
+
+
+/** Footer - Start**/
+#section-footer{
+    background-color: #EFEFE7;
+    background-image: url("/sites/all/themes/dann/images/generales/fondo-pie-de-pagina.jpg");
+    background-position: top left;
+    background-repeat: repeat-x;
+    height: 10.9em;
+    z-index: 3000;
+}
+#contenido-pie-de-pagina {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60em;
+    height: 10.9em;
+    background-image: url("/sites/all/themes/dann/images/generales/fondo-transparente-footer.png");
+    background-position: top left;
+    background-repeat: repeat-x;
+}
+.sub-menu-pie {
+    float: left;
+    width: auto;
+    height: 8em;
+    padding: 0em 0.5em;
+    margin: 0.9em 0em 0.8em 0em;
+    background-image: url("/sites/all/themes/dann/images/generales/linea-separador-menus-footer.gif");
+    background-position: top right;
+    background-repeat: repeat-y;
+}
+.sub-menu-pie p {
+    color: #FFF;
+    margin: 0em 0em 0.5em 0em;
+}
+.sub-menu-pie ul {
+    width: 9em;
+}
+.sub-menu-pie p a {
+  color: #fff
+}
+.sub-menu-pie ul li {
+    line-height: 90%;
+
+}
+.sub-menu-pie ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.6em;
+    display: block;
+}
+.sub-menu-pie ul li a:hover {
+  text-decoration: underline;
+}
+.reservas-colombia {
+    padding: 0.9em 0em 0em 0.5em;
+    float: left;
+    width: 9em;
+}
+.reservas-colombia p {
+    color: #FFF;
+    font-size: 0.7em;
+    margin: 2em 0em 0em 0em;
+}
+.reservas-colombia p span {
+    display: block;
+    font-size: 1.3em;
+    padding: 0.2em 0em 0em 1.9em;
+    background-image: url("/sites/all/themes/dann/images/generales/flag-colombia.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.creditos {
+    display: block;
+    clear: both;
+}
+.creditos p {
+    font-size: 0.7em;
+}
+.creditos p, .creditos p a {
+    color: #FFF;
+}
+.creditos p a {
+    text-decoration: none;
+}
+.creditos p.copy {
+    float: left;
+}
+.creditos p.diseno-desarrollo {
+    float: right;
+}
+
+.view.view-conoce-el-hotel.view-id-conoce_el_hotel.view-display-id-block_4.view-dom-id-5.views-processed .view-header h2,
+.field-group-format.group_other_rooms.field-group-div.group-other-rooms.speed-fast.effect-none h2 {
+	font-size:1.25em;
+	margin-left:0px;
+	}
+.search-results.node-results, #search-form, #search-form h2 {
+	margin-right: 3em;
+	margin-left: 3em;
+	}
+
+#search-form {
+	margin-top: 4em;
+}
+.html.not-front.not-logged-in.page-search h2 {
+	font-size: 2.5em;
+	margin-left:1.1em;
+	margin-bottom:0.5em;
+	}
+
+#LiveChat_1327681466 {
+	position: fixed;
+	top: 100px;
+	right: 0px;
+	z-index:10000;
+	}
+.field-name-boton-facebook{
+	clear: both;
+	margin: 0 0 30px 40px;
+} 
+.node-destino, .node-atractivo-turistico {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	}
+.node-destino .group_izquierda, .node-atractivo-turistico .group_izquierda {
+	float: left;
+	width: 55%;
+	margin-left: 3em;
+	padding-right: 3em;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #EEECE7;
+	}
+.banner-destino {
+	margin-bottom: 3em;
+	}
+.node-destino .group_izquierda h1, .node-atractivo-turistico .group_izquierda h1 {
+	font-size: 40px;
+	margin-bottom: 0.5em;
+}
+.node-destino .group_izquierda .body, .node-atractivo-turistico .group_izquierda .body, .node-atractivo-turistico .body  {
+	margin-top: 1em;
+}
+.node-destino .group_izquierda p, .node-atractivo-turistico .group_izquierda p {
+	margin-bottom: 1em;
+	}
+.node-destino .group_izquierda h2, .node-atractivo-turistico .group_izquierda h2 {
+	font-size: 1.2em;
+	margin-bottom: 0.4em;
+	margin-top: 1em;
+}
+.node-destino .group_derecha, .node-atractivo-turistico .group_derecha {
+	float: right;
+	width: 30%;
+	font-size:0.76em;
+	margin-right:1em;
+	}
+.datos-generales li, .como-llegar li {
+	background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+	background-position: 0 0.1em;
+	background-repeat: no-repeat;
+	margin-top: 0.5em;
+	margin-right: 0;
+	margin-bottom: 0.2em;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 1.5em;
+}
+.como-llegar h2 {
+	margin-top: 1em;
+}
+.group_derecha h2 {
+	font-size:1.3em;
+	font-weight:bold;
+}
+.datos-generales {
+	margin-top:2em;
+	}
+.hoteles-en-destino .item-list ul li {
+	margin-left: 0px;
+	margin-bottom:20px;
+}
+.hoteles-en-destino .item-list ul {
+	margin-top: 1em;
+}
+#block-views-destino-block-1 {
+	background-color: #FFF;
+	padding-top: 30px;
+	padding-right: 56px;
+	padding-bottom: 56px;
+	padding-left: 56px;
+	}
+#block-views-destino-block-1 h2 {
+	font-size: 1.2em;
+	padding-bottom: 1em;
+}
+#block-views-destino-block-1 li {
+display: inline;
+    float: left;
+    margin: 0 2em 0 0;
+    width: 150px;
+	font-size:0.7em;
+	line-height:120%;
+}
+.creditoFoto {
+	font-size:0.7em;
+	color:#666;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #999;
+	padding-top: 1em;
+	}
+.galeria-fotos .lightbox-processed {
+	margin-right: 0.5em;
+	margin-bottom: 0.5m;
+	}
+.galeria-fotos {
+	margin-bottom:3em;
+	}
+.group_derecha #gmap-auto2map-gmap0 {
+	margin-top:1em;
+	margin-bottom:2em;
+	}
+.hoteles-cercanos {
+	margin-bottom:2em;}
+.como-llegar p {
+	font-size:1em;
+	margin-top:0.5em;}
+.view.view-atractivos.view-id-atractivos.view-display-id-block_1.view-dom-id-1 li {
+	margin-bottom:1em;}
+#block-views-slideshow-block {
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+}
+#block-views-slideshow-block .block-title{
+  display:none;
+}
+
+.block-view-360{
+    clear: both;
+}
+
+/** Hoteles - Start**/
+.view-hotel.view-id-hotel h1 {
+    font-size: 2.5em;
+    line-height: 110%;
+    margin-bottom: 1em;
+    padding: 1em 1em 0;
+}
+.view-hotel.view-id-hotel h2{
+  font-size:1.5em;
+  margin-top:2em;
+  margin-bottom:1em;
+}
+.view-hotel.view-id-hotel h2 a {
+  color:#666666;
+
+}
+.view-hotel.view-id-hotel h2 a:hover{
+  text-decoration:underline;
+}
+
+.view-hotel.view-id-hotel .view-content .views-row {
+    clear: both;
+    display: block;
+    margin: 2em auto;
+    width: 875px;
+}
+.view-hotel.view-id-hotel .view-content .views-row .vistarapida-tab{
+  background: none repeat scroll 0 0 #DAE4EF;
+  overflow:hidden;
+}
+.view-hotel.view-id-hotel .view-content .tab{
+  background:#DAE4EF;
+  color: #5587b9;
+}
+.view-hotel.view-id-hotel .view-content .tab a{
+  color: #5587b9;
+}
+.view-hotel.view-id-hotel .view-content .tab.comodidades{
+  display:none;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab #first{
+  display: block;
+  float: left;
+  width: 20em;
+  margin-right:1.5em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab #first a{
+  display:block;
+  margin-top:0.5em;
+  margin-left:3em;
+  color:#5c5f61;
+  text-decoration:underline;
+  margin-bottom:1em;
+}
+ 
+.view-hotel.view-id-hotel .view-content .vistarapida-tab img{
+  padding: 1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .cont{
+  display: block;
+  float: left;
+  margin-left: 1em;
+  width: 15em;
+  margin-top:1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .stars{
+  background: url("/sites/all/themes/dann/images/h-inicio-hotel/stars.png") no-repeat scroll 0 0 transparent;
+  height: 25px;
+  margin-bottom: 1em;
+  width: 145px;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq address{
+  font-weight:bold;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .city{
+  margin-bottom: 1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .phone{
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  line-height:135%;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der {
+
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der .label{
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der a.botonNaranja {
+    background-color: #FF6600;
+    background-image: -moz-linear-gradient(center bottom , #FF6600 0%, #FF9900 100%);
+    border: 0.0625em solid #FF9900;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 1px 1px 1px #333333;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-top: 2em;
+    padding: 0.4em 1em;
+    text-align: center;
+    width: 52%;
+}
+
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .botonAzul {
+    background-color: #39628a;
+    background-image: -moz-linear-gradient(center bottom , #39628a 0%, #5485b7 100%);
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 1px 1px 1px #333333;
+    color: white;
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 3em;
+    margin-left: 0.5em;
+    margin-top: 2em;
+    padding: 0.4em 1em;
+    text-align: center;
+    width: 14em;
+    float:left;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .izq .botonAzul .label{
+   font-size:0.85em;
+   padding:0.3em;
+   margin-right:1em;
+}
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der ul{
+  padding-left:0.5em;
+}
+
+.view-hotel.view-id-hotel .view-content .vistarapida-tab .der ul li {
+    background-image: url("/sites/all/themes/dann/images/generales/icono-li.png");
+    background-position: 0 0.1em; 
+    background-repeat: no-repeat;
+    font-size: 0.8em;
+    margin: 0 0 0.2em;
+    padding: 0 0 0 1.6em;
+    margin-bottom:0.5em;
+}
+/** Hoteles - End**/
+
+/** Explore - Start**/
+.view-explore-alrededores.view-display-id-block_1 .views-row  {
+    font-size: 0.8em;
+    margin-bottom:1em;
+    
+}
+.view-explore-alrededores.view-display-id-block_1 .views-row  a{
+    margin-bottom:1em;
+    display:block;
+    color:#666666;
+}
+.view-explore-alrededores.view-display-id-block_1 .views-row  a:hover{
+  text-decoration:underline;
+}
+#block-views-explore-alrededores-block-1 .block-title  {
+  font-size: 1.3em;
+  font-weight: bold;    
+  margin-bottom:1em;
+}
+/** Explore - End**/
