@@ -1290,15 +1290,18 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
     padding: 0.5em 0em;
 }
 #block-views-explore-alrededores-block-2{
+    background: none repeat scroll 0 0 #FFFFFF;
     float: left;
-    width: 36.875em;
-    margin: 0em 4em 2em 2.5em;
+    padding: 0 4em 2em 2.5em;
+    width: 36.88em;
     overflow: hidden;
 }
 #block-views-explore-alrededores-block-1{
+    background: none repeat scroll 0 0 #FFFFFF;
     float: left;
-    width: 11.875em;
-    margin: 0em 0em 2em 0em;
+    padding: 0 0 2em;
+    width: 15em;
+    padding-top:2em;
     overflow: hidden;
 }
 #block-views-explore-alrededores-block-1 h3{
@@ -2012,14 +2015,21 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active{
 .sub-menu-pie ul {
     width: 9em;
 }
+.sub-menu-pie p a {
+  color: #fff
+}
 .sub-menu-pie ul li {
     line-height: 90%;
+
 }
 .sub-menu-pie ul li a {
     color: #FFF;
     text-decoration: none;
     font-size: 0.6em;
     display: block;
+}
+.sub-menu-pie ul li a:hover {
+  text-decoration: underline;
 }
 .reservas-colombia {
     padding: 0.9em 0em 0em 0.5em;
@@ -2208,6 +2218,11 @@ display: inline;
 #block-views-slideshow-block .block-title{
   display:none;
 }
+
+.block-view-360{
+    clear: both;
+}
+
 /** Hoteles - Start**/
 .view-hotel.view-id-hotel h1 {
     font-size: 2.5em;
@@ -2354,6 +2369,7 @@ display: inline;
     margin-bottom:0.5em;
 }
 /** Hoteles - End**/
+
 /** Explore - Start**/
 .view-explore-alrededores.view-display-id-block_1 .views-row  {
     font-size: 0.8em;
@@ -2374,3 +2390,12 @@ display: inline;
   margin-bottom:1em;
 }
 /** Explore - End**/
+.field-name-booking-rooms #booking-form {
+  left: 2.3em;
+  position: absolute;
+  top: 172px;
+  z-index: 500;
+}
+.node-rooms .group-left {
+  height:0em;
+}
