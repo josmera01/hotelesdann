@@ -22,6 +22,11 @@ switch ($delta) {
       $block['subject'] = t('Bloque booking Rooms');
       $block['content'] = _get_booking_rooms();
       break;
+  case 'booking-custom':
+      $block['subject'] = t('Bloque booking Personalizable');
+      $block['content'] = _get_booking_custom();
+      break;
+
   case 'mapa-view':
       $block['subject'] = t('Bloque view mapa');
       $block['content'] = l(t('View map'), 'explore/'.arg(1));
@@ -59,12 +64,17 @@ function custom_dann_block_info() {
  $blocks['booking-rooms'] = array(
     'info' => t('Bloque booking Rooms'),
   );
+ $blocks['booking-custom'] = array(
+    'info' => t('Bloque booking Personalizable'),
+  );
+  
   $blocks['mapa-view'] = array(
     'info' => t('Bloque view mapa'),
   );
  $blocks['rooms-view'] = array(
     'info' => t('Bloque rooms'),
   );
+
   $blocks['booking-home'] = array(
     'info' => t('Bloque booking home'),
   );
@@ -885,6 +895,182 @@ case "pre_theme_map":
 
 }
 }
+function _get_booking_custom(){
+  $nid  = arg(1);
+  return _get_booking_code_custom($nid); 
+}
+function _get_booking_code_custom($id){
+    $entity = entity_load('node', array($id));
+    if(!empty($entity[$id]->field_custom_booking)){
+    global $language;
+	$locale="";
+	if($language->language=="es"){
+	  $locale="es-ES";
+	}
+	if($language->language=="en"){
+	  $locale="en-US";
+	}
+	if($language->language=="pt-br"){
+	  $locale="pt-PT";
+	}
+ 
+
+    $output .='<form method="get" action="https://gc.synxis.com/rez.aspx" id="booking-form">';
+  $output  .='<fieldset>';
+  $output .='<legend class="accesibility">Reservar una habitación</legend>';
+
+      $output .= '<input type="hidden" value="13317" name="chain"> ';
+      $custom =$entity[$id]->field_custom_booking['und'][0]['value'];
+      $custom = explode(",",$custom);
+      foreach($custom as $item){
+	    $tmp=explode("=",$item);
+	    if(!empty($tmp[0]) && !empty($tmp[1])){
+		  $output  .= '<input type="hidden" value="'.$tmp[1].'" name="'.$tmp[0].'">';
+		}			
+		
+	  }
+      $output .= '<input type="hidden" value="'.$locale.'" name="locale"> <!-- Variable de idioma, cambia según idioma del sitio Ej: Inglés en-US Portugués pt-PT-->';
+      $output .= '<input type="hidden" value="availresults" name="start"> <!-- Variable para indicar al Booking Engine que no muestre la selección de fechas de nuevo (No Modificar) -->';
+
+      $output .='<div class="wrapper calendar">';
+        $output .='<label for="datepicker">'.t('Arrival Date').'</label>';
+       $output .='<input type="text" class="text-input calendar required" name="arrive" id="datepicker" size="10" />';
+      $output .='</div>';
+
+
+      $output .='      <div class="wrapper nights">
+        <label for="nights">'.t('Nights').'</label>
+      
+      <select  class="text-input" name="nights" id="nights" >
+         <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+
+    </select>
+
+      </div>';
+
+      $output .='  <div class="wrapper">
+        <label for="rooms"><abbr title="Número de habitaciones">'.t('Rooms').'</abbr></label>
+       <select class="" id="rooms" name="rooms">
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      </div>
+      
+      <div class="wrapper">
+        <label for="adult">'.t('Adults').'</label>
+       <select class="text-input" name="adult" id="adult" >
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+    </select>
+
+      </div>
+      
+      <div class="wrapper childs">
+        <label for="child">'.t('Children').'</label>
+       
+        <select class="text-input" name="child" id="child">
+
+        <option value="0" selected="selected">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+
+        <option value="18">18</option>
+    </select>
+
+      </div>
+      
+      <input type="submit" class="submit" value="'.t('Book Now!').'" />';
+    $output .='</fieldset>';
+      $output .='</form>';
+        $output .= '
+
+<div style="display: none;" class="demo-description">
+
+</div>';
+  /*  drupal_add_js('jQuery(document).ready(function () { 
+    jQuery("#datepicker").click(function() {
+       jQuery("#datepicker").datepicker({
+            numberOfMonths: 2,
+            showButtonPanel: false
+        });
+        alert("hola");
+    });
+     });', 'inline'); */
+ 	drupal_add_js(drupal_get_path('module', 'custom_dann') . '/js/EventsAnalitycs.js');
+    return $output;     
+}
+
+
+
 function custom_dann_views_pre_view(&$view, &$display_id, &$args) {
  	drupal_add_js(drupal_get_path('module', 'custom_dann') . '/js/EventsAnalitycs.js');
 
@@ -902,4 +1088,4 @@ if($view->vid==5 && $display_id=="block_1" || $display_id=="block_2"){
   $arg=explode("/",$source[0]->source);
   $args[]=$arg[1];
 }
-}
+}}

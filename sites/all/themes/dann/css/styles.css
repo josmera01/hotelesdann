@@ -2399,3 +2399,12 @@ display: inline;
 .node-rooms .group-left {
   height:0em;
 }
+.field-name-bookin-personalizable {
+  position:relative;
+  height: 0;
+}
+.field-name-bookin-personalizable #booking-form {
+  bottom: 0;
+  left: 2em;
+  position: absolute;
+}
